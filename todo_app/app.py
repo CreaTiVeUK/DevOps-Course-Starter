@@ -13,10 +13,10 @@ def index():
     return render_template('index.html', items = session.get_items())
 
 
-@app.route('/add_film', methods=['POST'])  
-def add_film():
+@app.route('/add_item', methods=['POST'])  
+def add_item():
     title = request.form['filmTitle']
-    session.add_film(title)
+    session.add_item(title)
     return redirect("/", code=302)
 
 
