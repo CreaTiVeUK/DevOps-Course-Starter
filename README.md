@@ -36,7 +36,7 @@ You'll need to sign up to trello and insert your Key & Token in the .env file.
 
 ## Running the App
 
-Once the all dependencies have been installed, start the Flask app in development mode within the poetry environment by running:
+Once all the dependencies have been installed, start the Flask app in development mode within the poetry environment by running:
 ```bash
 $ poetry run flask run
 ```

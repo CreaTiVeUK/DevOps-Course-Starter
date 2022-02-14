@@ -4,11 +4,6 @@ from flask.wrappers import Request
 from todo_app.flask_config import Config
 import todo_app.data.session_items as session
 
-#Trello API key -> 6a36bc3254f4441f08c8207b0da716fa
-#Trello token -> f16c623ce612b724f1ca17ab93f0c2bc7373cc5f70416e856e7ec57ee1779b73
-#Trello board -> https://trello.com/b/RZcQuIck/to-do -> RZcQuIck
-#Thunder client
-
 app = Flask(__name__)
 app.config.from_object(Config)
 
