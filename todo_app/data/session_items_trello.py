@@ -88,10 +88,10 @@ def move_Card(to_list, card_id):
   }
   requests.put(url, card)
 
-cards,lists = get_Lists_and_Cards()
+#cards,lists = get_Lists_and_Cards()
 #print(cards["test4"]['card_id'])
 #print(lists["To Do"]['list_id'])
 #print(get_Card_ID("test4"))
-create_Card("To Do", "test6")
-move_Card("Doing", cards['test6']['card_id'])
+#create_Card("To Do", "test6")
+#move_Card("Doing", cards['test6']['card_id'])
 #print(move_Card('Done','test4'))
