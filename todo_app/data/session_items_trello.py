@@ -77,7 +77,7 @@ def move_Card(to_list, card_id):
 
     Args:
         to_list: List to move the card to.
-        card_name: Name of the card.
+        card_name: ID of the card.
 
     Returns:
         card: The moved card.
