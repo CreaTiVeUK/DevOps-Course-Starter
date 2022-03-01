@@ -8,30 +8,31 @@
     <div class="col-md-12">
         <h2>Items</h2>
         <ul class="list-group mb-4">
-            {% for key, value in cards.items() %} {% if value.list_name == 'To Do' %}
+            {% for item in cards %}
+            {% if item.list_name == 'To Do' %}
             <div class="form-inline">
                 <div class="form-group mb-2">
-                    <li name="card">{{key}}</li>
+                    <li name="card">{{item.name}}</li>
                 </div>
                 <div class="form-group mx-sm-3 mb-2">
                     <button class="btn btn-outline-secondary" type="button">
-                        <a href="{{ url_for('complete_item', titleID = value.card_id) }}">Move to 'Done'</a>
+                        <a href="{{ url_for('complete_item', titleID = item.id) }}">Move to 'Done'</a>
                     </button>
                 </div>
             </div>
             {% else %}
             <div class="form-inline ">
                 <div class="form-group mb-2 ">
-                    <li name="card ">{{key}}</li>
+                    <li name="card ">{{item.name}}</li>
                 </div>
                 <div class="form-group mx-sm-3 mb-2 ">
                     <button class="btn btn-outline-secondary" type="button">
-                        <a href="{{ url_for('revert_item', titleID = value.card_id) }}">Revert to 'To Do'</a>
+                        <a href="{{ url_for('revert_item', titleID = item.id) }}">Revert to 'To Do'</a>
                     </button>
                 </div>
             </div>
-            {% endif %} {% endfor %}
-            </form>
+            {% endif %}
+            {% endfor %}
         </ul>
     </div>
 </div>
