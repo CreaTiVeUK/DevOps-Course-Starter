@@ -1,2 +1,14 @@
 ### 2022-02-27 18:52:11,808 ### appLog ### INFO ### Title to add: rweqrwer ###
 ### 2022-02-27 18:54:34,821 ### appLog ### INFO ### Title to add: 123432321 ###
+### 2022-03-01 19:30:16,436 ### appLog ### INFO ### Attempting to move card ###
+### 2022-03-01 19:30:16,436 ### appLog ### INFO ### Item to move from To Do to Done: 61c9efb12a4989214a75b4c8 ###
+### 2022-03-01 19:30:28,915 ### appLog ### INFO ### Attempting to move card ###
+### 2022-03-01 19:30:28,916 ### appLog ### INFO ### Item to move from To Do to Done: 61c9efb12a4989214a75b4cc ###
+### 2022-03-01 19:30:36,562 ### appLog ### INFO ### Attempting to move card ###
+### 2022-03-01 19:30:36,562 ### appLog ### INFO ### Item to move from To Do to Done: 621b9c0a7fc1cc6f2bec0041 ###
+### 2022-03-01 19:30:38,580 ### appLog ### INFO ### Attempting to move card ###
+### 2022-03-01 19:30:38,580 ### appLog ### INFO ### Item to move from To Do to Done: 61c9efb12a4989214a75b4e2 ###
+### 2022-03-01 19:31:11,971 ### appLog ### INFO ### Attempting to move card ###
+### 2022-03-01 19:31:11,971 ### appLog ### INFO ### Item to revert from Done to To Do: 621b9c0a7fc1cc6f2bec0041 ###
+### 2022-03-01 19:44:31,613 ### appLog ### INFO ### Attempting to move card ###
+### 2022-03-01 19:44:31,613 ### appLog ### INFO ### Item to move from To Do to Done: 621b9c0a7fc1cc6f2bec0041 ###

@@ -18,14 +18,14 @@ def add_item():
     session.create_Card('To Do', title)
     return redirect(url_for('index'))
 
-@app.route('/complete_item', methods=['PUT'])  
+@app.route('/complete_item/<string:titleID>', methods=['GET'])  
 def complete_item(titleID):
     logger.log.info('Attempting to move card')
     logger.log.info('Item to move from To Do to Done: ' + titleID)
     session.move_Card('Done', titleID)
     return redirect(url_for('index'))
 
-@app.route('/revert_item', methods=['PUT'])  
+@app.route('/revert_item/<string:titleID>', methods=['GET'])  
 def revert_item(titleID):
     logger.log.info('Attempting to move card')
     logger.log.info('Item to revert from Done to To Do: ' + titleID)
