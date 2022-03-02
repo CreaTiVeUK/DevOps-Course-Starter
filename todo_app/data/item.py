@@ -5,9 +5,11 @@ import requests
 
 class Item:
 
-    def __init__(self, id, name, list_name, list_id):
+    def __init__(self, id, name, description, due, list_name, list_id):
         self.id = id
         self.name = name
+        self.description = description
+        self.due = due
         self.list_name = list_name
         self.list_id = list_id
 
@@ -18,9 +20,6 @@ class Item:
         Args:
             list_name: List name.
             card_name: Card name.
-
-        Returns:
-            card: Saved card.
         """
         card = {
             "name": card_name,
@@ -37,13 +36,38 @@ class Item:
 
         Args:
             to_list: List to move the card to.
-            card_name: ID of the card.
-
-        Returns:
-            card: The moved card.
+            card_id: ID of the card.
         """
         url = f"{api_url}cards/{card_id}?key={api_key}&token={api_token}"
         card = {
             "idList": List.get_List_ID(to_list)
+        }
+        requests.put(url, card)
+
+    def update_item_description(card_id, description):
+        """
+        Update a card's description.
+
+        Args:
+            card_id: ID of the card.
+            description: Description of the card.
+        """
+        url = f"{api_url}cards/{card_id}?key={api_key}&token={api_token}"
+        card = {
+            "desc": description
+        }
+        requests.put(url, card)
+
+    def update_item_due_date(card_id, due):
+        """
+        Update a card's due date.
+
+        Args:
+            card_id: ID of the card.
+            due: Due date of the card.
+        """
+        url = f"{api_url}cards/{card_id}?key={api_key}&token={api_token}"
+        card = {
+            "due": due
         }
         requests.put(url, card)

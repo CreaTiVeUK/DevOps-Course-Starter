@@ -3,6 +3,7 @@ from todo_app.data.item import Item
 from todo_app.data.list import List
 import requests
 import json
+import dateutil.parser
 
 
 def get_Items_and_Status():
@@ -19,6 +20,10 @@ def get_Items_and_Status():
     for list in response_json:
         lists.append(List(list['id'], list['name']))
         for card in list['cards']:
-            cards.append(Item(card['id'], card['name'],
-                         list['name'], list['id']))
+            if card['due'] is not None:
+                due = dateutil.parser.parse(card['due']).strftime('%m/%d/%Y')
+            else:
+                due = card['due']
+            cards.append(Item(
+                card['id'], card['name'], card['desc'], due, list['name'], list['id']))
     return cards, lists

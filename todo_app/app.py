@@ -21,7 +21,25 @@ def add_item():
     return redirect(url_for('index'))
 
 
-@app.route('/complete_item/<string:titleID>', methods=['GET'])
+@app.route('/item_description/<string:titleID>', methods=['GET', 'POST'])
+def item_description(titleID):
+    description = request.form['description']
+    logger.log.info('Card ID\'s description to update: ' + titleID)
+    logger.log.info('Description: ' + description)
+    Item.update_item_description(titleID, description)
+    return redirect(url_for('index'))
+
+
+@app.route('/item_due/<string:titleID>', methods=['GET', 'POST'])
+def item_due(titleID):
+    due = request.form['date']
+    logger.log.info('Card ID\'s : ' + titleID)
+    logger.log.info('Card due date: ' + due)
+    Item.update_item_due_date(titleID, due)
+    return redirect(url_for('index'))
+
+
+@app.route('/complete_item/<string:titleID>', methods=['POST'])
 def complete_item(titleID):
     logger.log.info('Attempting to move card')
     logger.log.info('Item to move from To Do to Done: ' + titleID)
@@ -29,7 +47,7 @@ def complete_item(titleID):
     return redirect(url_for('index'))
 
 
-@app.route('/revert_item/<string:titleID>', methods=['GET'])
+@app.route('/revert_item/<string:titleID>', methods=['POST'])
 def revert_item(titleID):
     logger.log.info('Attempting to move card')
     logger.log.info('Item to revert from Done to To Do: ' + titleID)
