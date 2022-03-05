@@ -1,8 +1,10 @@
 from flask import Flask, render_template, request, url_for, redirect
 from todo_app.flask_config import Config
 from todo_app.data.item import Item
+from todo_app.data.ViewModel import ViewModel
 import todo_app.data.session_items_trello as session
 import todo_app.logger_settings as logger
+
 
 app = Flask(__name__)
 app.config.from_object(Config)
@@ -10,7 +12,8 @@ app.config.from_object(Config)
 
 @app.route('/')
 def index():
-    return render_template('index.html', cards=session.get_Items_and_Status()[0])
+    item_view_model = ViewModel(session.get_Items_and_Status()[0]) 
+    return render_template('index.html', view_model=item_view_model)
 
 
 @app.route('/add_item', methods=['POST'])
