@@ -12,7 +12,8 @@ app.config.from_object(Config)
 
 @app.route('/')
 def index():
-    item_view_model = ViewModel(session.get_Items_and_Status()[0]) 
+    items = session.get_Items_and_Status()[0]
+    item_view_model = ViewModel(items) 
     return render_template('index.html', view_model=item_view_model)
 
 

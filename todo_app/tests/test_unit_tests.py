@@ -26,7 +26,7 @@ def test_doing_items():
     assert doing_items[0].list_name == "Doing"
 
 def test_done_items():
-    # Setup -> add a second item not part of To do
+    # Setup
     list = []
     list.append(Item(1, "Testing", "A card used for testing", "03/15/2022", "To Do", 12345))
     list.append(Item(2, "Testing", "A card used for testing", "03/15/2022", "Doing", 12345))
