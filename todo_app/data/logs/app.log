@@ -166,3 +166,111 @@
 ### 2022-03-02 11:58:52,930 ### appLog ### INFO ### Title to add: test666666 ###
 ### 2022-03-02 12:00:50,127 ### appLog ### INFO ### Card ID's : 621b9b3e34fcfc4471f286c3 ###
 ### 2022-03-02 12:00:50,127 ### appLog ### INFO ### Card due date: None ###
+### 2022-03-06 17:09:03,744 ### appLog ### INFO ### dateLastActivity: 2022-03-02T00:45:20.495Z ###
+### 2022-03-06 17:09:33,119 ### appLog ### INFO ### Card name: testing12356 ###
+### 2022-03-06 17:09:33,120 ### appLog ### INFO ### dateLastActivity: 2022-03-02T00:45:20.495Z ###
+### 2022-03-06 17:09:58,190 ### appLog ### INFO ### Card name: testing12356 ###
+### 2022-03-06 17:09:58,190 ### appLog ### INFO ### dateLastActivity: 2022-03-06T15:09:50.672Z ###
+### 2022-03-06 17:44:39,501 ### appLog ### INFO ### Card name: testing12356 ###
+### 2022-03-06 17:44:39,501 ### appLog ### INFO ### dateLastActivity: 2022-03-06T15:09:50.672Z ###
+### 2022-03-06 17:45:15,241 ### appLog ### INFO ### Card name: testing12356 ###
+### 2022-03-06 17:45:15,242 ### appLog ### INFO ### dateLastActivity: 2022-03-06T15:09:50.672Z ###
+### 2022-03-06 17:45:26,734 ### appLog ### INFO ### Card ID's : 621e7640db715e69661a37d9 ###
+### 2022-03-06 17:45:26,734 ### appLog ### INFO ### Card due date: 07/03/2022 ###
+### 2022-03-06 17:51:41,017 ### appLog ### INFO ### Card name: testing12356 ###
+### 2022-03-06 17:51:41,019 ### appLog ### INFO ### dateLastActivity: 2022-03-06T15:45:27.551Z ###
+### 2022-03-06 17:51:49,269 ### appLog ### INFO ### Card name: testing12356 ###
+### 2022-03-06 17:51:49,269 ### appLog ### INFO ### dateLastActivity: 2022-03-06T15:45:27.551Z ###
+### 2022-03-06 17:52:04,002 ### appLog ### INFO ### Card ID's : 621e7640db715e69661a37d9 ###
+### 2022-03-06 17:52:04,002 ### appLog ### INFO ### Card due date: 02/03/2022 ###
+### 2022-03-06 17:52:13,989 ### appLog ### INFO ### Card ID's : 621e7640db715e69661a37d9 ###
+### 2022-03-06 17:52:13,989 ### appLog ### INFO ### Card due date: 02/03/2022 ###
+### 2022-03-06 17:52:22,107 ### appLog ### INFO ### Card name: testing12356 ###
+### 2022-03-06 17:52:22,107 ### appLog ### INFO ### dateLastActivity: 2022-03-06T15:52:04.676Z ###
+### 2022-03-06 17:52:23,837 ### appLog ### INFO ### Card name: testing12356 ###
+### 2022-03-06 17:52:23,837 ### appLog ### INFO ### dateLastActivity: 2022-03-06T15:52:04.676Z ###
+### 2022-03-06 17:52:35,172 ### appLog ### INFO ### Card ID's : 621e7640db715e69661a37d9 ###
+### 2022-03-06 17:52:35,172 ### appLog ### INFO ### Card due date: 01/03/2022 ###
+### 2022-03-06 17:54:22,049 ### appLog ### INFO ### Card name: testing12356 ###
+### 2022-03-06 17:54:22,050 ### appLog ### INFO ### dateLastActivity: 2022-03-06T15:52:35.831Z ###
+### 2022-03-06 17:54:23,227 ### appLog ### INFO ### Card name: testing12356 ###
+### 2022-03-06 17:54:23,227 ### appLog ### INFO ### dateLastActivity: 2022-03-06T15:52:35.831Z ###
+### 2022-03-06 17:54:31,230 ### appLog ### INFO ### Card ID's : 621e7640db715e69661a37d9 ###
+### 2022-03-06 17:54:31,230 ### appLog ### INFO ### Card due date: 03/02/2022 ###
+### 2022-03-06 17:54:37,687 ### appLog ### INFO ### Card ID's : 621e7640db715e69661a37d9 ###
+### 2022-03-06 17:54:37,687 ### appLog ### INFO ### Card due date: 03/08/2022 ###
+### 2022-03-06 17:55:34,726 ### appLog ### INFO ### Card name: testing12356 ###
+### 2022-03-06 17:55:34,726 ### appLog ### INFO ### dateLastActivity: 2022-03-06T15:54:38.315Z ###
+### 2022-03-06 17:55:36,171 ### appLog ### INFO ### Card name: testing12356 ###
+### 2022-03-06 17:55:36,171 ### appLog ### INFO ### dateLastActivity: 2022-03-06T15:54:38.315Z ###
+### 2022-03-06 17:56:29,522 ### appLog ### INFO ### Card name: testing12356 ###
+### 2022-03-06 17:56:29,523 ### appLog ### INFO ### dateLastActivity: 2022-03-06T15:54:38.315Z ###
+### 2022-03-06 17:56:37,065 ### appLog ### INFO ### Card ID's : 621e7640db715e69661a37d9 ###
+### 2022-03-06 17:56:37,065 ### appLog ### INFO ### Card due date: 03/09/2022 ###
+### 2022-03-06 17:57:31,012 ### appLog ### INFO ### Card name: testing12356 ###
+### 2022-03-06 17:57:31,012 ### appLog ### INFO ### dateLastActivity: 2022-03-06T15:56:37.891Z ###
+### 2022-03-06 17:57:36,626 ### appLog ### INFO ### Card ID's : 621e7640db715e69661a37d9 ###
+### 2022-03-06 17:57:36,626 ### appLog ### INFO ### Card due date: 10/03/2022 ###
+### 2022-03-06 17:57:50,611 ### appLog ### INFO ### Card name: testing12356 ###
+### 2022-03-06 17:57:50,612 ### appLog ### INFO ### dateLastActivity: 2022-03-06T15:57:37.318Z ###
+### 2022-03-06 17:57:56,241 ### appLog ### INFO ### Card name: testing12356 ###
+### 2022-03-06 17:57:56,241 ### appLog ### INFO ### dateLastActivity: 2022-03-06T15:57:37.318Z ###
+### 2022-03-06 17:58:13,816 ### appLog ### INFO ### Card name: testing12356 ###
+### 2022-03-06 17:58:13,816 ### appLog ### INFO ### dateLastActivity: 2022-03-06T15:57:37.318Z ###
+### 2022-03-06 17:58:20,700 ### appLog ### INFO ### Card ID's : 621e7640db715e69661a37d9 ###
+### 2022-03-06 17:58:20,700 ### appLog ### INFO ### Card due date: 09/03/2022 ###
+### 2022-03-06 17:58:28,024 ### appLog ### INFO ### Card ID's : 621e7640db715e69661a37d9 ###
+### 2022-03-06 17:58:28,024 ### appLog ### INFO ### Card due date: 08/03/2022 ###
+### 2022-03-06 17:58:50,917 ### appLog ### INFO ### Card name: testing12356 ###
+### 2022-03-06 17:58:50,919 ### appLog ### INFO ### dateLastActivity: 2022-03-06T15:58:28.700Z ###
+### 2022-03-06 17:58:58,650 ### appLog ### INFO ### Card name: testing12356 ###
+### 2022-03-06 17:58:58,650 ### appLog ### INFO ### dateLastActivity: 2022-03-06T15:58:28.700Z ###
+### 2022-03-06 17:59:04,310 ### appLog ### INFO ### Card ID's : 621e7640db715e69661a37d9 ###
+### 2022-03-06 17:59:04,310 ### appLog ### INFO ### Card due date: 07/03/2022 ###
+### 2022-03-06 17:59:19,534 ### appLog ### INFO ### Card name: testing12356 ###
+### 2022-03-06 17:59:19,535 ### appLog ### INFO ### dateLastActivity: 2022-03-06T15:59:04.935Z ###
+### 2022-03-06 17:59:41,212 ### appLog ### INFO ### Card ID's description to update: 621e7640db715e69661a37d9 ###
+### 2022-03-06 17:59:41,214 ### appLog ### INFO ### Description: khakiaaaaaa ###
+### 2022-03-06 17:59:45,201 ### appLog ### INFO ### Attempting to move card ###
+### 2022-03-06 17:59:45,201 ### appLog ### INFO ### Item to move from To Do to Done: 621e7640db715e69661a37d9 ###
+### 2022-03-06 17:59:53,051 ### appLog ### INFO ### Attempting to move card ###
+### 2022-03-06 17:59:53,051 ### appLog ### INFO ### Item to revert from Done to To Do: 621e7640db715e69661a37d9 ###
+### 2022-03-06 18:00:01,891 ### appLog ### INFO ### Title to add: test999999 ###
+### 2022-03-06 18:15:18,791 ### appLog ### INFO ### Card name: testing12356 ###
+### 2022-03-06 18:15:18,792 ### appLog ### INFO ### dateLastActivity: 03/06/2022 ###
+### 2022-03-06 18:15:28,702 ### appLog ### INFO ### Card ID's : 621e7640db715e69661a37d9 ###
+### 2022-03-06 18:15:28,702 ### appLog ### INFO ### Card due date: 08/03/2022 ###
+### 2022-03-06 18:15:46,639 ### appLog ### INFO ### Card name: testing12356 ###
+### 2022-03-06 18:15:46,640 ### appLog ### INFO ### dateLastActivity: 03/06/2022 ###
+### 2022-03-06 18:16:24,674 ### appLog ### INFO ### Card name: testing12356 ###
+### 2022-03-06 18:16:24,675 ### appLog ### INFO ### dateLastActivity: 03/06/2022 ###
+### 2022-03-06 18:16:29,088 ### appLog ### INFO ### Card name: testing12356 ###
+### 2022-03-06 18:16:29,088 ### appLog ### INFO ### dateLastActivity: 03/06/2022 ###
+### 2022-03-06 18:16:36,948 ### appLog ### INFO ### Card ID's : 621e7640db715e69661a37d9 ###
+### 2022-03-06 18:16:36,948 ### appLog ### INFO ### Card due date: 09/03/2022 ###
+### 2022-03-07 16:52:00,384 ### appLog ### INFO ### Card ID's description to update: 621b9b3e34fcfc4471f286c3 ###
+### 2022-03-07 16:52:00,384 ### appLog ### INFO ### Description: testing description 6 ###
+### 2022-03-07 17:30:20,950 ### appLog ### INFO ### Card ID's description to update: 621b9b3e34fcfc4471f286c3 ###
+### 2022-03-07 17:30:20,951 ### appLog ### INFO ### Description: testing description 56 ###
+### 2022-03-07 17:30:24,865 ### appLog ### INFO ### Card ID's : 621b9b3e34fcfc4471f286c3 ###
+### 2022-03-07 17:30:24,866 ### appLog ### INFO ### Card due date: 22/03/2022 ###
+### 2022-03-07 17:30:33,996 ### appLog ### INFO ### Card ID's : 621b9b3e34fcfc4471f286c3 ###
+### 2022-03-07 17:30:33,997 ### appLog ### INFO ### Card due date: 16/03/2022 ###
+### 2022-03-07 19:05:58,540 ### appLog ### INFO ### Card ID's description to update: 621b9b3e34fcfc4471f286c3 ###
+### 2022-03-07 19:05:58,540 ### appLog ### INFO ### Description: testing description 566 ###
+### 2022-03-07 19:06:04,042 ### appLog ### INFO ### Card ID's description to update: 621b9b3e34fcfc4471f286c3 ###
+### 2022-03-07 19:06:04,042 ### appLog ### INFO ### Description: testing description 566444 ###
+### 2022-03-07 19:06:35,585 ### appLog ### INFO ### Card ID's description to update: 621b9b3e34fcfc4471f286c3 ###
+### 2022-03-07 19:06:35,587 ### appLog ### INFO ### Description: testing description 566444a ###
+### 2022-03-07 19:06:40,565 ### appLog ### INFO ### Card ID's : 621b9b3e34fcfc4471f286c3 ###
+### 2022-03-07 19:06:40,565 ### appLog ### INFO ### Card due date: 01/03/2022 ###
+### 2022-03-07 19:06:48,460 ### appLog ### INFO ### Card ID's : 621b9b3e34fcfc4471f286c3 ###
+### 2022-03-07 19:06:48,461 ### appLog ### INFO ### Card due date: 02/03/2022 ###
+### 2022-03-07 19:06:52,924 ### appLog ### INFO ### Attempting to move card ###
+### 2022-03-07 19:06:52,925 ### appLog ### INFO ### Item to move from To Do to Done: 621b9b3e34fcfc4471f286c3 ###
+### 2022-03-07 19:07:08,464 ### appLog ### INFO ### Attempting to move card ###
+### 2022-03-07 19:07:08,465 ### appLog ### INFO ### Item to move from To Do to Done: 621e7640db715e69661a37d9 ###
+### 2022-03-07 19:07:35,234 ### appLog ### INFO ### Attempting to move card ###
+### 2022-03-07 19:07:35,235 ### appLog ### INFO ### Item to revert from Done to To Do: 621e7640db715e69661a37d9 ###
+### 2022-03-07 19:07:50,770 ### appLog ### INFO ### Card ID's : 621e7640db715e69661a37d9 ###
+### 2022-03-07 19:07:50,771 ### appLog ### INFO ### Card due date: 10/03/2022 ###

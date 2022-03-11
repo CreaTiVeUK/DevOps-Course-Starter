@@ -1,15 +1,15 @@
-from todo_app.config.credentials import *
 from todo_app.data.list import List
+from flask import current_app
 import requests
-
 
 class Item:
 
-    def __init__(self, id, name, description, due, list_name, list_id):
+    def __init__(self, id, name, description, due, modification_time, list_name, list_id):
         self.id = id
         self.name = name
         self.description = description
         self.due = due
+        self.modification_time = modification_time
         self.list_name = list_name
         self.list_id = list_id
 
@@ -27,7 +27,7 @@ class Item:
             "idList": List.get_List_ID(list_name),
             "idMembers": ""
         }
-        url = f"{api_url}cards?key={api_key}&token={api_token}"
+        url = f"{current_app.config['TRELLO_URL']}cards?key={current_app.config['TRELLO_API_KEY']}&token={current_app.config['TRELLO_API_TOKEN']}"
         requests.post(url, card)
 
     def move_Card(to_list, card_id):
@@ -38,7 +38,7 @@ class Item:
             to_list: List to move the card to.
             card_id: ID of the card.
         """
-        url = f"{api_url}cards/{card_id}?key={api_key}&token={api_token}"
+        url = f"{current_app.config['TRELLO_URL']}cards/{card_id}?key={current_app.config['TRELLO_API_KEY']}&token={current_app.config['TRELLO_API_TOKEN']}"
         card = {
             "idList": List.get_List_ID(to_list)
         }
@@ -52,7 +52,7 @@ class Item:
             card_id: ID of the card.
             description: Description of the card.
         """
-        url = f"{api_url}cards/{card_id}?key={api_key}&token={api_token}"
+        url = f"{current_app.config['TRELLO_URL']}cards/{card_id}?key={current_app.config['TRELLO_API_KEY']}&token={current_app.config['TRELLO_API_TOKEN']}"
         card = {
             "desc": description
         }
@@ -66,7 +66,7 @@ class Item:
             card_id: ID of the card.
             due: Due date of the card.
         """
-        url = f"{api_url}cards/{card_id}?key={api_key}&token={api_token}"
+        url = f"{current_app.config['TRELLO_URL']}cards/{card_id}?key={current_app.config['TRELLO_API_KEY']}&token={current_app.config['TRELLO_API_TOKEN']}"
         card = {
             "due": due
         }

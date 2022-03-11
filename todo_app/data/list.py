@@ -1,4 +1,4 @@
-from todo_app.config.credentials import *
+from flask import current_app
 import requests
 import json
 
@@ -19,7 +19,7 @@ class List:
           Returns:
               List's ID, or None if no ID matches the specified name.
         """
-        url = f"{api_url}boards/{board_id}/lists?key={api_key}&token={api_token}"
+        url = f"{current_app.config['TRELLO_URL']}boards/{current_app.config['TRELLO_BOARD_ID']}/lists?key={current_app.config['TRELLO_API_KEY']}&token={current_app.config['TRELLO_API_TOKEN']}"
         response = requests.get(url)
         response_json = json.loads(response.text)
         for list in response_json:

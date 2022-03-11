@@ -53,7 +53,23 @@ You should see output similar to the following:
 ```
 Now visit [`http://localhost:5000/`](http://localhost:5000/) in your web browser to view the app.
 
-## Licensing
+
+## Testing the App
+
+You can run the available tests pack, in development mode within the poetry environment by running the following from the project's root directory.
+
+```bash
+$ poetry run pytest
+```
+
+To run individual tests i.e.:
+
+```bash
+#poetry run pytest todo_app/tests/test_unit_tests.py::<Test Name>
+poetry run pytest todo_app/tests/test_unit_tests.py::test_todo_items
+```
+
+## Licensing\
 
 MIT License
 
