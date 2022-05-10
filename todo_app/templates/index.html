@@ -1,8 +1,4 @@
-{% extends "layout.html" %}
-{% block title %}
-To-Do App
-{% endblock %}
-{% block content %}
+{% extends "layout.html" %} {% block title %} To-Do App {% endblock %} {% block content %}
 
 <div class="jumbotron">
     <h1 class="display-4">To-Do App</h1>
@@ -30,11 +26,10 @@ To-Do App
                     </div>
                     <div class="form-group mx-sm-3 mb-2">
                         <!-- Modal -->
-                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered" role="document">
                                 <div class="modal-content">
-                                    <form id="List_Select" method="POST">
+                                    <form id="List_Select" method="POST" onsubmit="submit_function(this)">
                                         <div class="modal-header">
                                             <h5 class="modal-title" id="exampleModalCenterTitle"> Move Item </h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -42,13 +37,13 @@ To-Do App
                                             </button>
                                         </div>
                                         <div class="modal-body">
-                                                <h6 class="modal-title" id="exampleModalCenterTitle">Select destination list</h6>
-                                                <select class="form-control" id="Lists">
-                                                    <option>Move to 'Done'</option>
-                                                    <option>Move to 'Doing'</option>
-                                                    <option>Move to 'To Do'</option>
-                                                </select>
-                                        </div>  
+                                            <h6 class="modal-title" id="exampleModalCenterTitle">Select destination list</h6>
+                                            <select class="form-control" id="Lists">
+                                                    <option data-action="{{ url_for('complete_item', titleID = item.id) }}">Move to Done</option>
+                                                    <option data-action="{{ url_for('doing_item', titleID = item.id) }}">Move to Doing</option>
+                                                    <option data-action="{{ url_for('revert_item', titleID = item.id) }}">Move to To Do</option>
+                                            </select>
+                                        </div>
                                         <div class="modal-footer">
                                             <input class="btn btn-primary" type="submit" value="Move">
                                         </div>
@@ -57,8 +52,7 @@ To-Do App
                             </div>
                         </div>
                         <!-- Modal End -->
-                        <button type="button" class="btn btn-primary" data-toggle="modal"
-                            data-target="#exampleModalCenter">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
                             Launch demo modal
                         </button>
                     </div>
@@ -85,41 +79,3 @@ To-Do App
     </div>
 </div>
 {% endblock %}
-
-
-<!--
-<form method="POST" action="{{ url_for('complete_item', titleID = item.id) }}">
-    <input class="btn btn-success" type="submit" value="Move to 'Done'">
-</form>
-<form method="POST" action="{{ url_for('doing_item', titleID = item.id) }}">
-    <input class="btn btn-info" type="submit" value="Move to 'Doing'">
-</form>
-<form method="POST" action="{{ url_for('revert_item', titleID = item.id) }}">
-    <input class="btn btn-success" type="submit" value="Move to 'To Do'">
-</form>
--->
-
-<script>
-    $(function () {
-        $(".date").datepicker({ dateFormat: 'dd/mm/yy' }).val();
-    });
-
-    $(document).ready(function () {
-        $("#Lists").change(function () {
-            var url = $(this).children(":selected").text();
-            switch (url) {
-                case "Move to 'To Do'":
-                    $("#List_Select").attr('action', "{{ url_for('revert_item', titleID = item.id) }}");
-                    break;
-                case "Move to 'Doing'":
-                    $("#List_Select").attr('action', "{{ url_for('doing_item', titleID = item.id) }}");
-                    break;
-                case "Move to 'Done'":
-                    $("#List_Select").attr('action', "{{ url_for('complete_item', titleID = item.id) }}");
-                    break;
-                default:
-                    $("#List_Select ").attr('action', '#');
-            }
-        });
-    }); 
-</script>

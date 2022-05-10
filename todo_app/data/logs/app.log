@@ -274,3 +274,24 @@
 ### 2022-03-07 19:07:35,235 ### appLog ### INFO ### Item to revert from Done to To Do: 621e7640db715e69661a37d9 ###
 ### 2022-03-07 19:07:50,770 ### appLog ### INFO ### Card ID's : 621e7640db715e69661a37d9 ###
 ### 2022-03-07 19:07:50,771 ### appLog ### INFO ### Card due date: 10/03/2022 ###
+### 2022-05-04 18:35:39,901 ### appLog ### INFO ### Card ID's : 621e7640db715e69661a37d9 ###
+### 2022-05-04 18:35:39,901 ### appLog ### INFO ### Card due date: 11/03/2022 ###
+### 2022-05-04 18:42:21,744 ### appLog ### INFO ### Card ID's : 621e7640db715e69661a37d9 ###
+### 2022-05-04 18:42:21,744 ### appLog ### INFO ### Card due date: 11/03/2022 ###
+### 2022-05-04 19:46:52,343 ### appLog ### INFO ### Attempting to move card ###
+### 2022-05-04 19:46:52,344 ### appLog ### INFO ### session to move from To Do to Done: 621e7640db715e69661a37d9 ###
+### 2022-05-04 19:50:03,807 ### appLog ### INFO ### Attempting to move card ###
+### 2022-05-04 19:50:03,808 ### appLog ### INFO ### session to move from To Do to Done: 621e7640db715e69661a37d9 ###
+### 2022-05-04 19:51:02,733 ### appLog ### INFO ### Attempting to move card ###
+### 2022-05-04 19:51:02,734 ### appLog ### INFO ### session to move from To Do to Done: 621ebe9001a94019a009dfb5 ###
+### 2022-05-04 19:51:24,203 ### appLog ### INFO ### Attempting to move card ###
+### 2022-05-04 19:51:24,204 ### appLog ### INFO ### session to move from To Do to Done: 621f3fdd81e9e60d1f477116 ###
+### 2022-05-04 19:52:41,866 ### appLog ### INFO ### Attempting to move card ###
+### 2022-05-04 19:52:41,866 ### appLog ### INFO ### session to move from To Do to Done: 6224da83f7d9ef1f350670fa ###
+### 2022-05-04 19:54:14,482 ### appLog ### INFO ### Attempting to move card to Doing list ###
+### 2022-05-04 19:55:04,991 ### appLog ### INFO ### Attempting to move card to Done list ###
+### 2022-05-04 19:55:14,075 ### appLog ### INFO ### Attempting to move card to Done list ###
+### 2022-05-04 19:55:54,565 ### appLog ### INFO ### Attempting to move card to Doing list ###
+### 2022-05-04 19:56:01,900 ### appLog ### INFO ### Attempting to move card to To Do list ###
+### 2022-05-04 19:56:09,935 ### appLog ### INFO ### Attempting to move card to Done list ###
+### 2022-05-10 19:07:18,177 ### appLog ### INFO ### Attempting to move card to Doing list ###
