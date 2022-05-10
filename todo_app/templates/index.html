@@ -1,28 +1,63 @@
 {% extends "layout.html" %}
-{% block title %}To-Do App{% endblock %}
-
+{% block title %}
+To-Do App
+{% endblock %}
 {% block content %}
-  <div class="jumbotron">
+<div class="jumbotron">
     <h1 class="display-4">To-Do App</h1>
     <p class="lead">Just another to-do app.</p>
-  </div>
+</div>
 
-  <div class="row">
-    <div class="col-md-12">
-      <h2>Items</h2>
-      <ul class="list-group mb-4">
-        {% for item in items %}
-          <li>{{ item.title }}</li>
-	      {% endfor %}	
-      </ul>
-    </div>
-  </div>
-
-  <div class="row">
+<div class="row ">
     <form action="/add_item" method="POST">
-      <label>Title:</label>
-      <input type="text" name="filmTitle" required>
-      <input type="submit">
+        <label>Title:</label>
+        <input type="text" name="filmTitle">
+        <input class="btn btn-outline-secondary" type="submit" value="Add item">
     </form>
-  </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Items</h2>
+        <ul class="list-group">
+            {% for item in cards %}
+            <li class="list-group-item">
+                <div class="form-inline">
+                    <div class="form-group mb-2">
+                        <h1 class="display-5">{{item.name}}</h1>
+                    </div>
+                    <div class="form-group mx-sm-3 mb-2">
+                        {% if item.list_name == 'To Do' %}
+                        <form method="POST" action="{{ url_for('complete_item', titleID = item.id) }}"
+                            style="position: absolute; right: 0;">
+                            <input class="btn btn-success" type="submit" value="Move to 'Done'">
+                        </form>
+                        {% else %}
+                        <form method="POST" action="{{ url_for('revert_item', titleID = item.id) }}"
+                            style="position: absolute; right: 0;">
+                            <input class="btn btn-warning" type="submit" value="Revert to 'To Do'">
+                        </form>
+                        {% endif %}
+                    </div>
+                </div>
+                <form method="POST" action="{{ url_for('item_description', titleID = item.id) }}">
+                    <div class="form-group">
+                        <label>Description</label>
+                        <textarea class="form-control" name="description" rows="3">{{item.description}}</textarea>
+                        <br>
+                        <input class="btn btn-primary mb-2" type="submit" value="Update Description">
+                    </div>
+                </form>
+                <form method="POST" action="{{ url_for('item_due', titleID = item.id) }}">
+                    <div class="form-group">
+                        <label>Due Date</label>
+                        <input type="text" name="date" class="date" value="{{item.due}}">
+                        <input class="btn btn-outline-secondary" type="submit" value="Update Due Date">
+                    </div>
+                </form>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
 {% endblock %}

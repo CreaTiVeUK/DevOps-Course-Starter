@@ -1,0 +1,159 @@
+### 2022-02-27 18:52:11,808 ### appLog ### INFO ### Title to add: rweqrwer ###
+### 2022-02-27 18:54:34,821 ### appLog ### INFO ### Title to add: 123432321 ###
+### 2022-03-01 19:30:16,436 ### appLog ### INFO ### Attempting to move card ###
+### 2022-03-01 19:30:16,436 ### appLog ### INFO ### Item to move from To Do to Done: 61c9efb12a4989214a75b4c8 ###
+### 2022-03-01 19:30:28,915 ### appLog ### INFO ### Attempting to move card ###
+### 2022-03-01 19:30:28,916 ### appLog ### INFO ### Item to move from To Do to Done: 61c9efb12a4989214a75b4cc ###
+### 2022-03-01 19:30:36,562 ### appLog ### INFO ### Attempting to move card ###
+### 2022-03-01 19:30:36,562 ### appLog ### INFO ### Item to move from To Do to Done: 621b9c0a7fc1cc6f2bec0041 ###
+### 2022-03-01 19:30:38,580 ### appLog ### INFO ### Attempting to move card ###
+### 2022-03-01 19:30:38,580 ### appLog ### INFO ### Item to move from To Do to Done: 61c9efb12a4989214a75b4e2 ###
+### 2022-03-01 19:31:11,971 ### appLog ### INFO ### Attempting to move card ###
+### 2022-03-01 19:31:11,971 ### appLog ### INFO ### Item to revert from Done to To Do: 621b9c0a7fc1cc6f2bec0041 ###
+### 2022-03-01 19:44:31,613 ### appLog ### INFO ### Attempting to move card ###
+### 2022-03-01 19:44:31,613 ### appLog ### INFO ### Item to move from To Do to Done: 621b9c0a7fc1cc6f2bec0041 ###
+### 2022-03-01 21:36:33,557 ### appLog ### INFO ### Attempting to move card ###
+### 2022-03-01 21:36:33,558 ### appLog ### INFO ### Item to move from To Do to Done: 621b9b3e34fcfc4471f286c3 ###
+### 2022-03-01 21:38:06,034 ### appLog ### INFO ### Attempting to move card ###
+### 2022-03-01 21:38:06,034 ### appLog ### INFO ### Item to move from To Do to Done: 621b9b3e34fcfc4471f286c3 ###
+### 2022-03-01 21:38:09,282 ### appLog ### INFO ### Attempting to move card ###
+### 2022-03-01 21:38:09,282 ### appLog ### INFO ### Item to move from To Do to Done: 621bbe3ab69d8927abb60863 ###
+### 2022-03-01 21:38:19,098 ### appLog ### INFO ### Attempting to move card ###
+### 2022-03-01 21:38:19,098 ### appLog ### INFO ### Item to revert from Done to To Do: 61c9efb12a4989214a75b4c8 ###
+### 2022-03-01 21:38:22,210 ### appLog ### INFO ### Attempting to move card ###
+### 2022-03-01 21:38:22,211 ### appLog ### INFO ### Item to revert from Done to To Do: 621bc09acb09b072ff3a4998 ###
+### 2022-03-01 21:38:24,780 ### appLog ### INFO ### Attempting to move card ###
+### 2022-03-01 21:38:24,780 ### appLog ### INFO ### Item to revert from Done to To Do: 61c9efb12a4989214a75b4cc ###
+### 2022-03-01 21:38:26,652 ### appLog ### INFO ### Attempting to move card ###
+### 2022-03-01 21:38:26,652 ### appLog ### INFO ### Item to revert from Done to To Do: 61c9efb12a4989214a75b4e2 ###
+### 2022-03-01 21:38:28,791 ### appLog ### INFO ### Attempting to move card ###
+### 2022-03-01 21:38:28,791 ### appLog ### INFO ### Item to revert from Done to To Do: 621b9b3e34fcfc4471f286c3 ###
+### 2022-03-01 21:38:39,399 ### appLog ### INFO ### Title to add: testing12356 ###
+### 2022-03-01 21:38:43,903 ### appLog ### INFO ### Attempting to move card ###
+### 2022-03-01 21:38:43,903 ### appLog ### INFO ### Item to move from To Do to Done: 621e7640db715e69661a37d9 ###
+### 2022-03-01 21:38:46,231 ### appLog ### INFO ### Attempting to move card ###
+### 2022-03-01 21:38:46,232 ### appLog ### INFO ### Item to revert from Done to To Do: 621e7640db715e69661a37d9 ###
+### 2022-03-01 21:38:49,461 ### appLog ### INFO ### Attempting to move card ###
+### 2022-03-01 21:38:49,461 ### appLog ### INFO ### Item to move from To Do to Done: 621e7640db715e69661a37d9 ###
+### 2022-03-01 21:38:55,151 ### appLog ### INFO ### Attempting to move card ###
+### 2022-03-01 21:38:55,151 ### appLog ### INFO ### Item to revert from Done to To Do: 621e7640db715e69661a37d9 ###
+### 2022-03-01 21:53:49,341 ### appLog ### INFO ### Attempting to move card ###
+### 2022-03-01 21:53:49,342 ### appLog ### INFO ### Item to move from To Do to Done: 61c9efb12a4989214a75b4c8 ###
+### 2022-03-01 21:53:52,614 ### appLog ### INFO ### Attempting to move card ###
+### 2022-03-01 21:53:52,614 ### appLog ### INFO ### Item to revert from Done to To Do: 61c9efb12a4989214a75b4c8 ###
+### 2022-03-01 21:54:06,094 ### appLog ### INFO ### Attempting to move card ###
+### 2022-03-01 21:54:06,094 ### appLog ### INFO ### Item to move from To Do to Done: 61c9efb12a4989214a75b4c8 ###
+### 2022-03-01 23:13:29,204 ### appLog ### INFO ### Attempting to move card ###
+### 2022-03-01 23:13:29,204 ### appLog ### INFO ### Item to move from To Do to Done: 621bc09acb09b072ff3a4998 ###
+### 2022-03-01 23:23:08,951 ### appLog ### INFO ### Attempting to move card ###
+### 2022-03-01 23:23:08,952 ### appLog ### INFO ### Item to move from To Do to Done: 61c9efb12a4989214a75b4cc ###
+### 2022-03-01 23:23:25,812 ### appLog ### INFO ### Title to add: testingitem ###
+### 2022-03-01 23:23:32,026 ### appLog ### INFO ### Attempting to move card ###
+### 2022-03-01 23:23:32,026 ### appLog ### INFO ### Item to move from To Do to Done: 621e8ece55ed9a645ff42f88 ###
+### 2022-03-02 00:45:54,694 ### appLog ### INFO ### Card ID's description to update: 621b9b3e34fcfc4471f286c3 ###
+### 2022-03-02 00:45:54,694 ### appLog ### INFO ### Description: testing description 2 ###
+### 2022-03-02 00:46:00,921 ### appLog ### INFO ### Card ID's description to update: 621b9b3e34fcfc4471f286c3 ###
+### 2022-03-02 00:46:00,921 ### appLog ### INFO ### Description: testing description 2 ###
+### 2022-03-02 01:06:59,247 ### appLog ### INFO ### Card ID's description to update: 621b9b3e34fcfc4471f286c3 ###
+### 2022-03-02 01:06:59,249 ### appLog ### INFO ### Description: testing description 5 ###
+### 2022-03-02 01:07:58,864 ### appLog ### INFO ### Card ID's description to update: 61c9efb12a4989214a75b4e2 ###
+### 2022-03-02 01:07:58,864 ### appLog ### INFO ### Description: 1 ###
+### 2022-03-02 01:08:59,954 ### appLog ### INFO ### Attempting to move card ###
+### 2022-03-02 01:08:59,954 ### appLog ### INFO ### Item to move from To Do to Done: 61c9efb12a4989214a75b4e2 ###
+### 2022-03-02 01:09:04,094 ### appLog ### INFO ### Attempting to move card ###
+### 2022-03-02 01:09:04,094 ### appLog ### INFO ### Item to revert from Done to To Do: 61c9efb12a4989214a75b4e2 ###
+### 2022-03-02 01:10:58,851 ### appLog ### INFO ### Card ID's description to update: 61c9efb12a4989214a75b4e2 ###
+### 2022-03-02 01:10:58,852 ### appLog ### INFO ### Description: 2 ###
+### 2022-03-02 01:17:12,572 ### appLog ### INFO ### Card ID's description to update: 61c9efb12a4989214a75b4e2 ###
+### 2022-03-02 01:17:12,573 ### appLog ### INFO ### Description: 23 ###
+### 2022-03-02 01:28:05,314 ### appLog ### INFO ### Card ID's description to update: 61c9efb12a4989214a75b4e2 ###
+### 2022-03-02 01:28:05,315 ### appLog ### INFO ### Description: 234 ###
+### 2022-03-02 01:28:09,373 ### appLog ### INFO ### Card ID's description to update: 61c9efb12a4989214a75b4e2 ###
+### 2022-03-02 01:28:09,373 ### appLog ### INFO ### Description: 2345 ###
+### 2022-03-02 01:28:19,034 ### appLog ### INFO ### Card ID's description to update: 621e8ece55ed9a645ff42f88 ###
+### 2022-03-02 01:28:19,035 ### appLog ### INFO ### Description: testinggg ###
+### 2022-03-02 02:12:23,748 ### appLog ### INFO ### Card ID's : 61c9efb12a4989214a75b4e2 ###
+### 2022-03-02 02:12:23,749 ### appLog ### INFO ### Card due date: 16/03/2022 ###
+### 2022-03-02 02:12:50,396 ### appLog ### INFO ### Card ID's : 61c9efb12a4989214a75b4e2 ###
+### 2022-03-02 02:12:50,396 ### appLog ### INFO ### Card due date: 09/03/2022 ###
+### 2022-03-02 02:13:00,288 ### appLog ### INFO ### Card ID's : 61c9efb12a4989214a75b4e2 ###
+### 2022-03-02 02:13:00,288 ### appLog ### INFO ### Card due date: 18/03/2022 ###
+### 2022-03-02 02:13:12,277 ### appLog ### INFO ### Card ID's : 61c9efb12a4989214a75b4e2 ###
+### 2022-03-02 02:13:12,278 ### appLog ### INFO ### Card due date: 14/03/2022 ###
+### 2022-03-02 02:13:22,309 ### appLog ### INFO ### Card ID's : 61c9efb12a4989214a75b4e2 ###
+### 2022-03-02 02:13:22,310 ### appLog ### INFO ### Card due date: 14/03/2022 ###
+### 2022-03-02 02:13:32,074 ### appLog ### INFO ### Card ID's : 61c9efb12a4989214a75b4e2 ###
+### 2022-03-02 02:13:32,074 ### appLog ### INFO ### Card due date: 01/03/2022 ###
+### 2022-03-02 02:13:36,513 ### appLog ### INFO ### Card ID's : 61c9efb12a4989214a75b4e2 ###
+### 2022-03-02 02:13:36,514 ### appLog ### INFO ### Card due date: 2022-01-03T05:00:00.000Z ###
+### 2022-03-02 02:13:39,094 ### appLog ### INFO ### Card ID's : 61c9efb12a4989214a75b4e2 ###
+### 2022-03-02 02:13:39,094 ### appLog ### INFO ### Card due date: 17/03/2022 ###
+### 2022-03-02 02:13:42,916 ### appLog ### INFO ### Card ID's : 61c9efb12a4989214a75b4e2 ###
+### 2022-03-02 02:13:42,916 ### appLog ### INFO ### Card due date: 2022-01-03T05:00:00.000Z ###
+### 2022-03-02 02:13:46,129 ### appLog ### INFO ### Card ID's : 61c9efb12a4989214a75b4e2 ###
+### 2022-03-02 02:13:46,130 ### appLog ### INFO ### Card due date: 23/03/2022 ###
+### 2022-03-02 02:13:59,889 ### appLog ### INFO ### Card ID's : 61c9efb12a4989214a75b4e2 ###
+### 2022-03-02 02:13:59,890 ### appLog ### INFO ### Card due date: 11/03/2022 ###
+### 2022-03-02 02:14:10,938 ### appLog ### INFO ### Card ID's : 61c9efb12a4989214a75b4e2 ###
+### 2022-03-02 02:14:10,938 ### appLog ### INFO ### Card due date: 04/03/2022 ###
+### 2022-03-02 02:29:33,814 ### appLog ### INFO ### Card ID's : 61c9efb12a4989214a75b4e2 ###
+### 2022-03-02 02:29:33,814 ### appLog ### INFO ### Card due date: 05/04/2022 ###
+### 2022-03-02 02:29:46,411 ### appLog ### INFO ### Card ID's : 61c9efb12a4989214a75b4e2 ###
+### 2022-03-02 02:29:46,411 ### appLog ### INFO ### Card due date: 03/05/2022 ###
+### 2022-03-02 02:30:46,438 ### appLog ### INFO ### Card ID's : 61c9efb12a4989214a75b4e2 ###
+### 2022-03-02 02:30:46,438 ### appLog ### INFO ### Card due date: 04/05/2022 ###
+### 2022-03-02 02:30:51,132 ### appLog ### INFO ### Card ID's : 61c9efb12a4989214a75b4e2 ###
+### 2022-03-02 02:30:51,132 ### appLog ### INFO ### Card due date: 05/05/2022 ###
+### 2022-03-02 02:30:56,505 ### appLog ### INFO ### Card ID's : 61c9efb12a4989214a75b4e2 ###
+### 2022-03-02 02:30:56,505 ### appLog ### INFO ### Card due date: 06/05/2022 ###
+### 2022-03-02 02:31:02,478 ### appLog ### INFO ### Card ID's : 61c9efb12a4989214a75b4e2 ###
+### 2022-03-02 02:31:02,478 ### appLog ### INFO ### Card due date: 03/03/2022 ###
+### 2022-03-02 02:31:07,306 ### appLog ### INFO ### Card ID's : 61c9efb12a4989214a75b4e2 ###
+### 2022-03-02 02:31:07,306 ### appLog ### INFO ### Card due date: 04/03/2022 ###
+### 2022-03-02 02:31:11,314 ### appLog ### INFO ### Card ID's : 61c9efb12a4989214a75b4e2 ###
+### 2022-03-02 02:31:11,314 ### appLog ### INFO ### Card due date: 05/03/2022 ###
+### 2022-03-02 02:31:17,308 ### appLog ### INFO ### Card ID's : 61c9efb12a4989214a75b4e2 ###
+### 2022-03-02 02:31:17,308 ### appLog ### INFO ### Card due date: 06/03/2022 ###
+### 2022-03-02 02:31:28,161 ### appLog ### INFO ### Card ID's : 61c9efb12a4989214a75b4e2 ###
+### 2022-03-02 02:31:28,161 ### appLog ### INFO ### Card due date: 07/03/2022 ###
+### 2022-03-02 02:31:42,011 ### appLog ### INFO ### Card ID's : 61c9efb12a4989214a75b4e2 ###
+### 2022-03-02 02:31:42,012 ### appLog ### INFO ### Card due date: 08/03/2022 ###
+### 2022-03-02 02:32:20,489 ### appLog ### INFO ### Card ID's : 61c9efb12a4989214a75b4e2 ###
+### 2022-03-02 02:32:20,490 ### appLog ### INFO ### Card due date: 07/04/2022 ###
+### 2022-03-02 02:32:27,797 ### appLog ### INFO ### Card ID's : 61c9efb12a4989214a75b4e2 ###
+### 2022-03-02 02:32:27,797 ### appLog ### INFO ### Card due date: 06/04/2022 ###
+### 2022-03-02 02:43:21,992 ### appLog ### INFO ### Card ID's : 621bbe3ab69d8927abb60863 ###
+### 2022-03-02 02:43:21,993 ### appLog ### INFO ### Card due date: 10/03/2022 ###
+### 2022-03-02 02:43:27,941 ### appLog ### INFO ### Card ID's : 621bbe3ab69d8927abb60863 ###
+### 2022-03-02 02:43:27,941 ### appLog ### INFO ### Card due date: 11/03/2022 ###
+### 2022-03-02 02:44:15,099 ### appLog ### INFO ### Attempting to move card ###
+### 2022-03-02 02:44:15,100 ### appLog ### INFO ### Item to move from To Do to Done: 61c9efb12a4989214a75b4e2 ###
+### 2022-03-02 02:44:20,610 ### appLog ### INFO ### Attempting to move card ###
+### 2022-03-02 02:44:20,610 ### appLog ### INFO ### Item to revert from Done to To Do: 61c9efb12a4989214a75b4e2 ###
+### 2022-03-02 02:44:31,041 ### appLog ### INFO ### Card ID's description to update: 621e7640db715e69661a37d9 ###
+### 2022-03-02 02:44:31,041 ### appLog ### INFO ### Description: khaki ###
+### 2022-03-02 02:44:35,246 ### appLog ### INFO ### Card ID's : 621e7640db715e69661a37d9 ###
+### 2022-03-02 02:44:35,246 ### appLog ### INFO ### Card due date: 16/03/2022 ###
+### 2022-03-02 02:44:50,088 ### appLog ### INFO ### Card ID's : 621e8ece55ed9a645ff42f88 ###
+### 2022-03-02 02:44:50,088 ### appLog ### INFO ### Card due date: 12/03/2022 ###
+### 2022-03-02 02:44:57,760 ### appLog ### INFO ### Card ID's : 621bc09acb09b072ff3a4998 ###
+### 2022-03-02 02:44:57,761 ### appLog ### INFO ### Card due date: 20/03/2022 ###
+### 2022-03-02 02:45:20,229 ### appLog ### INFO ### Card ID's : 621e7640db715e69661a37d9 ###
+### 2022-03-02 02:45:20,230 ### appLog ### INFO ### Card due date: 03/03/2022 ###
+### 2022-03-02 02:45:28,614 ### appLog ### INFO ### Card ID's : 61c9efb12a4989214a75b4c8 ###
+### 2022-03-02 02:45:28,614 ### appLog ### INFO ### Card due date: 07/03/2022 ###
+### 2022-03-02 02:45:35,764 ### appLog ### INFO ### Card ID's : 621bc09acb09b072ff3a4998 ###
+### 2022-03-02 02:45:35,765 ### appLog ### INFO ### Card due date: 04/03/2022 ###
+### 2022-03-02 02:47:11,516 ### appLog ### INFO ### Title to add: ending ###
+### 2022-03-02 02:47:21,269 ### appLog ### INFO ### Card ID's : 621ebe9001a94019a009dfb5 ###
+### 2022-03-02 02:47:21,269 ### appLog ### INFO ### Card due date: 18/03/2022 ###
+### 2022-03-02 02:47:33,766 ### appLog ### INFO ### Card ID's : 621ebe9001a94019a009dfb5 ###
+### 2022-03-02 02:47:33,766 ### appLog ### INFO ### Card due date: 11/03/2022 ###
+### 2022-03-02 02:47:41,984 ### appLog ### INFO ### Card ID's description to update: 621ebe9001a94019a009dfb5 ###
+### 2022-03-02 02:47:41,985 ### appLog ### INFO ### Description: testing the description ###
+### 2022-03-02 02:47:48,173 ### appLog ### INFO ### Card ID's description to update: 621ebe9001a94019a009dfb5 ###
+### 2022-03-02 02:47:48,173 ### appLog ### INFO ### Description: testing the description. ###
+### 2022-03-02 02:49:23,085 ### appLog ### INFO ### Card ID's : 621ebe9001a94019a009dfb5 ###
+### 2022-03-02 02:49:23,086 ### appLog ### INFO ### Card due date: 07/12/2022 ###
+### 2022-03-02 02:49:51,406 ### appLog ### INFO ### Card ID's description to update: 621ebe9001a94019a009dfb5 ###
+### 2022-03-02 02:49:51,407 ### appLog ### INFO ### Description: testing the description. It works. ###
