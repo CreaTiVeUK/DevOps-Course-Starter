@@ -1,5 +1,5 @@
 [webserver]
-18.135.68.84
+{Enter your Managed node IP address here}
 
 #"ControllerIP" = "35.177.90.75"
 #"ManagedNodeIP" = "18.135.68.84"
