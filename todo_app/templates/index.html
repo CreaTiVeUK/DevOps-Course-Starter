@@ -15,64 +15,67 @@
 
 <div class="row">
     <div class="col-md-12">
-        <h2>Items</h2>
+        <h2 class="text-center">ITEMS</h2>
         {% for list in [view_model.todo_items, view_model.doing_items, view_model.done_items] %}
         <ul class="list-group">
+            {% if list %}
+                <h4 class="display-2">{{list.0.list_name}}</h4>
+            {% endif %}
             {% for item in list %}
-            <li class="list-group-item">
-                <div class="form-inline">
-                    <div class="form-group mb-2">
-                        <h1 class="display-5">{{item.name}}</h1>
-                    </div>
-                    <div class="form-group mx-sm-3 mb-2">
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                <div class="modal-content">
-                                    <form id="List_Select" method="POST" onsubmit="submit_function(this)">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalCenterTitle"> Move Item </h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <h6 class="modal-title" id="exampleModalCenterTitle">Select destination list</h6>
-                                            <select class="form-control" id="Lists">
-                                                    <option data-action="{{ url_for('complete_item', titleID = item.id) }}">Move to Done</option>
-                                                    <option data-action="{{ url_for('doing_item', titleID = item.id) }}">Move to Doing</option>
-                                                    <option data-action="{{ url_for('revert_item', titleID = item.id) }}">Move to To Do</option>
-                                            </select>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <input class="btn btn-primary" type="submit" value="Move">
-                                        </div>
-                                    </form>
+                <li class="list-group-item">
+                    <div class="form-inline">
+                        <div class="form-group mb-2">
+                            <h3 class="display-5">{{item.name}}</h3>
+                        </div>
+                        <div class="form-group mx-sm-3 mb-2">
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <form id="List_Select" method="POST" onsubmit="submit_function(this)">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalCenterTitle"> Move Item </h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h6 class="modal-title" id="exampleModalCenterTitle">Select destination list</h6>
+                                                <select class="form-control" id="Lists">
+                                                        <option data-action="{{ url_for('complete_item', titleID = item.id) }}">Move to Done</option>
+                                                        <option data-action="{{ url_for('doing_item', titleID = item.id) }}">Move to Doing</option>
+                                                        <option data-action="{{ url_for('revert_item', titleID = item.id) }}">Move to To Do</option>
+                                                </select>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <input class="btn btn-primary" type="submit" value="Move">
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
+                            <!-- Modal End -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                                Launch demo modal
+                            </button>
                         </div>
-                        <!-- Modal End -->
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                            Launch demo modal
-                        </button>
                     </div>
-                </div>
-                <form method="POST" action="{{ url_for('item_description', titleID = item.id) }}">
-                    <div class="form-group">
-                        <label>Description</label>
-                        <textarea class="form-control" name="description" rows="3">{{item.description}}</textarea>
-                        <br>
-                        <input class="btn btn-primary mb-2" type="submit" value="Update Description">
-                    </div>
-                </form>
-                <form method="POST" action="{{ url_for('item_due', titleID = item.id) }}">
-                    <div class="form-group">
-                        <label>Due Date</label>
-                        <input type="text" name="date" class="date" value="{{item.due}}">
-                        <input class="btn btn-outline-secondary" type="submit" value="Update Due Date">
-                    </div>
-                </form>
-            </li>
+                    <form method="POST" action="{{ url_for('item_description', titleID = item.id) }}">
+                        <div class="form-group">
+                            <label>Description</label>
+                            <textarea class="form-control" name="description" rows="3">{{item.description}}</textarea>
+                            <br>
+                            <input class="btn btn-primary mb-2" type="submit" value="Update Description">
+                        </div>
+                    </form>
+                    <form method="POST" action="{{ url_for('item_due', titleID = item.id) }}">
+                        <div class="form-group">
+                            <label>Due Date</label>
+                            <input type="text" name="date" class="date" value="{{item.due}}">
+                            <input class="btn btn-outline-secondary" type="submit" value="Update Due Date">
+                        </div>
+                    </form>
+                </li>
             {% endfor %}
         </ul>
         {% endfor %}
