@@ -7,7 +7,7 @@ formatter = logging.Formatter(
     '### $asctime ### $name ### ${levelname} ### $message ###', style='$')
 
 # Log to file
-filehandler = logging.FileHandler("todo_app/logs/app.log", "a")
+filehandler = logging.FileHandler("todo_app/data/logs/app.log", "a")
 filehandler.setLevel(logging.INFO)
 filehandler.setFormatter(formatter)
 log.addHandler(filehandler)

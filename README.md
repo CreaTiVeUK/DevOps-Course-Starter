@@ -22,7 +22,6 @@ The project uses a virtual environment to isolate package dependencies. To creat
 
 ```bash
 $ poetry install
-$ pip install python-dateutil
 ```
 
 You'll also need to clone a new `.env` file from the `.env.template` to store local configuration options. This is a one-time operation on first setup:
@@ -53,6 +52,57 @@ You should see output similar to the following:
  * Debugger PIN: 226-556-590
 ```
 Now visit [`http://localhost:5000/`](http://localhost:5000/) in your web browser to view the app.
+
+## Ansible deployment to additional nodes
+
+1. Move into the ansible directory
+2. Edit inventory.txt by adding the Managed Node IP Address to deploy the app to.
+3. Create an ansible encrypted file to store your trello secrets by running
+```bash
+$ ansible-vault create --vault-id my_pass@prompt trello_secrets.yml
+```
+
+You should see output similar to the following:
+```bash
+[DEPRECATION WARNING]: ...
+New vault password (my_pass): 
+Confirm new vault password (my_pass): 
+```
+Safely store your password and do not commit it!
+
+4. Add and save your trello secrets, by adding the following variables in and replacing the dots with your values:
+trello_api_key=...
+trello_token=...
+trello_url=...
+trello_board_id=...
+
+5. Edit the inventory file by adding your managed node IPs, where you will deploy the app to i.e.:
+
+[webserver]
+123.123.123.123
+
+6. Run the following to deploy:
+```bash
+$ ansible-playbook --ask-vault-pass deploy_todoApp.yaml -i inventory
+```
+
+7. In your browser enter the managed node IP address at port 5000 to view the app i.e.:
+123.123.123.123:5000
+
+## Testing the App
+
+You can run the available tests pack, in development mode within the poetry environment by running the following from the project's root directory.
+
+```bash
+$ poetry run pytest
+```
+
+To run individual tests i.e.:
+
+```bash
+#poetry run pytest todo_app/tests/test_unit_tests.py::<Test Name>
+poetry run pytest todo_app/tests/test_unit_tests.py::test_todo_items
+```
 
 ## Licensing
 
