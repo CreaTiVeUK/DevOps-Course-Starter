@@ -1,0 +1,28 @@
+version: "3.9"
+services:
+  test:
+    env_file: ./.env_test
+    build: 
+      context: .
+      target: test
+    image: todo-app:test
+    volumes:
+      - ./todo_app:/appcode/todo_app
+  dev:
+    env_file: ./.env
+    build: 
+      context: .
+      target: development
+    image: todo-app:dev
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./todo_app:/appcode/todo_app
+  prod:
+    env_file: ./.env
+    build: 
+      context: .
+      target: production
+    image: todo-app:prod
+    ports:
+      - "8000:8000"

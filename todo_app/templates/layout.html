@@ -28,19 +28,9 @@
     <script>
         $(function() {
             $(".date").datepicker({
-                dateFormat: 'dd/mm/yy'
-            }).val();
-        });
-
-        function submit_function(form) {
-            var selected = document.getElementById('Lists');
-            var dataset = selected[selected.selectedIndex].dataset;
-            console.log("2")
-            if (dataset.action) {
-                form.action = dataset.action;
-            }
-            return true;
-        };
+                dateFormat: 'mm/dd/yy'
+            }).val();    
+        });     
     </script>
 </body>
 

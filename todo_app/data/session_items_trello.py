@@ -18,18 +18,6 @@ def date_parse(date):
     """
     return dateutil.parser.parse(date).strftime('%m/%d/%Y')
 
-def date_parse(date):
-    """
-    Parses a date returned from Trello into a suitable format
-
-        Args:
-            date: Date returned from Trello
-        
-        Returns:
-            date: Formatted date  
-    """
-    return dateutil.parser.parse(date).strftime('%m/%d/%Y')
-
 def get_Items_and_Status():
     """
       Get all items from the board.
@@ -53,7 +41,7 @@ def get_Items_and_Status():
                 list['name'],
                 list['id'])
             )
-    return cards, lists
+    return cards
 
 def create_Card(list_name, card_name):
     """
