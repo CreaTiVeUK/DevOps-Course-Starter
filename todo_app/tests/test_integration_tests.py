@@ -8,8 +8,11 @@ from flask import current_app
 
 @pytest.fixture
 def client():
-    file_path = find_dotenv('.env_test')
-    load_dotenv(file_path, override=True)
+    try:
+        file_path = find_dotenv('.env_test')
+        load_dotenv(file_path, override=True)
+    except:
+        pass
     test_app = app.create_app()
     with test_app.test_client() as client:
         yield client

@@ -42,22 +42,3 @@ def test_done_items():
     assert 2 == len(done_items)
     assert done_items[0].list_name == "Done"
     
-    
-def test_modification_time():
-    #Setup
-    list = []
-    list.append(Item(1, "Testing", "A card used for testing", "03/15/2022", "03/15/2022", "" "To Do", 12345))
-   
-    
-def test_should_show_all_done_items():
-    print()
-  
-    
-def test_recent_done_items():
-    print()
-   
-    
-def test_older_done_items():
-    print()
-  
-    

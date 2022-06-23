@@ -89,6 +89,36 @@ $ ansible-playbook --ask-vault-pass deploy_todoApp.yaml -i inventory
 7. In your browser enter the managed node IP address at port 5000 to view the app i.e.:
 123.123.123.123:5000
 
+## Dockerfile Image generation
+
+1. Install Docker:
+https://www.docker.com/products/docker-desktop/
+
+2. Build and Run the image using any of the commands below for the required environments:
+    
+    Test:
+    ```bash
+    $ docker build --target test --tag todo-app:test .
+    $ docker run --env-file ./.env_test -it --mount type=bind,source="$(pwd)"/todo_app,target=/appcode/todo_app todo-app:test
+    ```
+    
+    Development:
+    ```bash
+    $ docker build --target development --tag todo-app:dev .
+    $ docker run --env-file ./.env -p 5000:5000 -it --mount type=bind,source="$(pwd)"/todo_app,target=/appcode/todo_app todo-app:dev
+    ```
+
+    Production:
+    ```bash
+    $ docker build --target production --tag todo-app:prod .
+    $ docker run --env-file ./.env -p 8000:8000 todo-app:prod
+    ```
+    
+    All:
+    ```bash
+    $ docker-compose up --build
+    ```
+
 ## Testing the App
 
 You can run the available tests pack, in development mode within the poetry environment by running the following from the project's root directory.
