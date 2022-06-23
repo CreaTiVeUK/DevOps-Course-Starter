@@ -94,17 +94,7 @@ $ ansible-playbook --ask-vault-pass deploy_todoApp.yaml -i inventory
 1. Install Docker:
 https://www.docker.com/products/docker-desktop/
 
-2. Install GUnicorn:
-```bash
-$ pip install gunicorn
-```
-
-3. Install Watchdog
-```bash
-$ poetry add watchdog --dev
-```
-
-4. Build and Run the image using any of the commands below for the required environments:
+2. Build and Run the image using any of the commands below for the required environments:
     
     Test:
     ```bash
