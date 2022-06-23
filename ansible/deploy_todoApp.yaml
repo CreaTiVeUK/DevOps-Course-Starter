@@ -2,6 +2,8 @@
 - name: Deploy To Do app
   hosts: webserver
   remote_user: ec2-user
+  vars_files:
+    - ./trello_secrets.yml
 
   tasks: 
     - name: Install Git
@@ -42,10 +44,19 @@
 
     - name: Create a .env file on the host
       ansible.builtin.template:
-      src: /mytemplates/foo.j2
-      dest: /etc/file.conf
-      mode: '0644'
-      vars:
-        
+        src: .env.j2
+        dest: /opt/todoapp/.env
+        mode: '0644'
 
-  
+    - name: Copy service file
+      ansible.builtin.copy:
+        src: /home/ec2-user/ansible/todoapp.service
+        dest: /etc/systemd/system/todoapp.service
+      become: true
+
+    - name: Startup To Do app
+      ansible.builtin.systemd:
+        state: started
+        name: todoapp.service
+        daemon_reload: true
+      become: true
