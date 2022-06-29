@@ -28,6 +28,11 @@ ENTRYPOINT poetry run pytest; poetry run watchmedo shell-command \
     --command='poetry run pytest' \
     .
 
+# -----Configure for local test-----
+FROM test as ci-test
+# Define an entrypoint, and default launch command
+ENTRYPOINT poetry run pytest
+
 # -----Configure for local development-----
 FROM base as development
 ENV FLASK_ENV development
