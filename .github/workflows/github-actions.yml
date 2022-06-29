@@ -1,0 +1,33 @@
+name: CI - To-Do app
+
+on:
+  push:
+    paths-ignore:
+      - 'README.md'
+      - 'Dockerfile'
+      - '.github/**'
+      - '.dockerignore'
+      - 'docker-compose.yml'
+      - 'ansible/**'
+  pull_request:
+    paths-ignore:
+      - 'README.md'
+      - 'Dockerfile'
+      - '.github/**'
+      - '.dockerignore'
+      - 'docker-compose.yml'
+      - 'ansible/**'
+
+jobs: 
+  build:
+    name: Build and test
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+      name: Checkout the code
+
+    - run: docker build --target ci-test --tag todo-app:ci-test .
+      name: Build the CI test image
+
+    - run: docker run --env-file ./.env_test todo-app:ci-test
+      name: Run the CI test image
