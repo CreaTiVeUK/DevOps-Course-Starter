@@ -17,6 +17,7 @@ on:
       - '.dockerignore'
       - 'docker-compose.yml'
       - 'ansible/**'
+  workflow_dispatch:
 
 jobs:
   build:
