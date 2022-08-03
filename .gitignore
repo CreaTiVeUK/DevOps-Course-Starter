@@ -118,6 +118,3 @@ env/
 
 ### Configuration files ###
 .env
-
-### Logs ###
-*.log
