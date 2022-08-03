@@ -10,8 +10,13 @@ on:
       - 'docker-compose.yml'
       - 'ansible/**'
   pull_request:
-    branches:
-      -  master
+    paths-ignore:
+      - 'README.md'
+      - 'Dockerfile'
+      - '.github/**'
+      - '.dockerignore'
+      - 'docker-compose.yml'
+      - 'ansible/**'
 
 jobs:
   build:
