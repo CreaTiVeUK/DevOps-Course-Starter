@@ -39,10 +39,10 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       
       - name: Build the CI prod image 
-        run: docker build --target production --tag creativeuk/todo_app:latest --tag creativeuk/todo_app:"$GITHUB_SHA" .
+        run: docker build --target production --tag simeonp901/todo_app:latest --tag simeonp901/todo_app:"$GITHUB_SHA" .
       
       - name: Push the CI prod image to Docker Hub
-        run: docker push creativeuk/todo_app --all-tags
+        run: docker push simeonp901/todo_app --all-tags
 
   deploy:
     name: Heroku      
