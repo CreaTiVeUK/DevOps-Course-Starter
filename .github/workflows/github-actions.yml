@@ -17,7 +17,6 @@ on:
       - '.dockerignore'
       - 'docker-compose.yml'
       - 'ansible/**'
-  workflow_dispatch:
 
 jobs:
   build:
@@ -48,3 +47,10 @@ jobs:
       
       - name: Push the CI prod image to Docker Hub
         run: docker push CreaTiVeUK/todo_app --all-tags
+
+  deploy:
+    name: Deploy to Azure via Heroku      
+    needs: publish
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: actions/checkout@v2
