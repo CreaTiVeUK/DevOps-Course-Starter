@@ -134,6 +134,9 @@ To run individual tests i.e.:
 poetry run pytest todo_app/tests/test_unit_tests.py::test_todo_items
 ```
 
+## Heroku link to app
+https://todo-app-simeon.herokuapp.com
+
 ## Licensing
 
 MIT License
