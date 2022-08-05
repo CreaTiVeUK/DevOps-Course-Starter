@@ -28,7 +28,7 @@ jobs:
     name: Push image to Docker Hub
     needs: build
     runs-on: ubuntu-latest
-    if: github.event_name == 'push' && and github.ref == 'refs/heads/main'
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     steps:
       - uses: actions/checkout@v3
       - uses: docker/login-action@v1
