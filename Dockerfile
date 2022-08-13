@@ -6,6 +6,7 @@ ENV POETRY_VERSION=1.1.13
 # System deps:
 RUN pip install "poetry==$POETRY_VERSION"
 
+
 # Copy across your application code
 WORKDIR /appcode
 COPY poetry.lock pyproject.toml ./
@@ -16,6 +17,7 @@ RUN poetry config virtualenvs.create false \
 
 # Creating folders, and files for a project:
 COPY todo_app ./todo_app
+COPY entrypoint.sh ./
 
 # -----Configure for local test-----
 FROM base as test
@@ -45,5 +47,7 @@ EXPOSE 5000
 FROM base as production
 ENV FLASK_ENV production
 # Define an entrypoint, and default launch command
-ENTRYPOINT poetry run gunicorn --bind 0.0.0.0:8000 "todo_app.app:create_app()" 
+RUN chmod +x ./entrypoint.sh
+ENV PORT=8000
+ENTRYPOINT ["./entrypoint.sh"]
 EXPOSE 8000

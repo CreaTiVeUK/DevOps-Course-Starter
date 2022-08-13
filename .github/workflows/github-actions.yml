@@ -4,30 +4,58 @@ on:
   push:
     paths-ignore:
       - 'README.md'
-      - 'Dockerfile'
-      - '.github/**'
       - '.dockerignore'
       - 'docker-compose.yml'
       - 'ansible/**'
   pull_request:
-    paths-ignore:
-      - 'README.md'
-      - 'Dockerfile'
-      - '.github/**'
-      - '.dockerignore'
-      - 'docker-compose.yml'
-      - 'ansible/**'
+    branches:
+      -  main
 
-jobs: 
+jobs:
   build:
     name: Build and test
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-      name: Checkout the code
+    - uses: satackey/action-docker-layer-caching@v0.0.11
+      continue-on-error: true
+    - name: Build the CI test image
+      run: docker build --target ci-test --tag todo-app:ci-test .
 
-    - run: docker build --target ci-test --tag todo-app:ci-test .
-      name: Build the CI test image
+    - name: Run the CI test image
+      run: docker run --env-file ./.env_test todo-app:ci-test
+      
+  publish:
+    name: Push image to Docker Hub
+    needs: build
+    runs-on: ubuntu-latest
+    if: ${{ (github.event_name == 'push') && (github.ref == 'refs/heads/main') }}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: satackey/action-docker-layer-caching@v0.0.11
+        continue-on-error: true
+      - uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      
+      - name: Build the CI prod image 
+        run: docker build --target production --tag simeonp901/todo_app:latest --tag simeonp901/todo_app:"$GITHUB_SHA" .
 
-    - run: docker run --env-file ./.env_test todo-app:ci-test
-      name: Run the CI test image
+      - name: Push the CI prod image to Docker Hub
+        run: docker push simeonp901/todo_app --all-tags
+
+  deploy:
+    name: Deploy image to Heroku      
+    needs: publish
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: satackey/action-docker-layer-caching@v0.0.11
+        continue-on-error: true
+      - uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "todo-app-simeon"
+          heroku_email: "simeon_penev@hotmail.com"
+          usedocker: true     
