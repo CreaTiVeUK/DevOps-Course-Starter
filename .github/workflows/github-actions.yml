@@ -60,11 +60,11 @@ jobs:
           heroku_email: "simeon_penev@hotmail.com"
           usedocker: true
 
-      - name: Build the CI prod image for Heroku
-        run: docker build --target production --tag registry.heroku.com/todo-app-simeon/web .
-
-      - name: Push the image to Heroku's Doker Hub registry
-        run: docker push registry.heroku.com/todo-app-simeon/web
-
-      - name: Release the image to Heroku
-        run: heroku container:release web -a todo-app-simeon
+#      - name: Build the CI prod image for Heroku
+#        run: docker build --target production --tag registry.heroku.com/todo-app-simeon/web .
+#
+#      - name: Push the image to Heroku's Doker Hub registry
+#        run: docker push registry.heroku.com/todo-app-simeon/web
+#
+#      - name: Release the image to Heroku
+#        run: heroku container:release web -a todo-app-simeon
