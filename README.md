@@ -96,12 +96,18 @@ https://www.docker.com/products/docker-desktop/
 
 2. Build and Run the image using any of the commands below for the required environments:
     
-    Test:
+    Test (Reruns tests if any files recursivily matching the patterns were edited -> "*.py;*.html" ):
     ```bash
     $ docker build --target test --tag todo-app:test .
     $ docker run --env-file ./.env_test -it --mount type=bind,source="$(pwd)"/todo_app,target=/appcode/todo_app todo-app:test
     ```
     
+    CI-Test:
+    ```bash
+    $ docker build --target ci-test --tag todo-app:ci-test .
+    $ docker run --env-file ./.env_test todo-app:ci-test
+    ```
+
     Development:
     ```bash
     $ docker build --target development --tag todo-app:dev .
