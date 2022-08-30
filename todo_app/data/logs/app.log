@@ -59,3 +59,53 @@
 ### 2022-08-29 12:27:50,217 ### appLog ### INFO ### Attempting to move card to Doing list: 62fbb6898b2ab2dc48e83626 ###
 ### 2022-08-29 12:27:51,494 ### appLog ### INFO ### Attempting to move card to To Do list: 62fbb6898b2ab2dc48e83626 ###
 ### 2022-08-29 12:27:52,270 ### appLog ### INFO ### Attempting to move card to To Do list: 62fbb6898b2ab2dc48e83626 ###
+### 2022-08-30 15:55:00,575 ### appLog ### INFO ### Title to add: testing_dev ###
+### 2022-08-30 15:55:04,630 ### appLog ### INFO ### Card ID's : 630e32d45fa83d207ffc6342 ###
+### 2022-08-30 15:55:04,632 ### appLog ### INFO ### Card due date: 10/08/2022 ###
+### 2022-08-30 15:55:06,762 ### appLog ### INFO ### Card ID's : 630e32d45fa83d207ffc6342 ###
+### 2022-08-30 15:55:06,765 ### appLog ### INFO ### Card due date: 11/08/2022 ###
+### 2022-08-30 15:55:11,888 ### appLog ### INFO ### Card ID's : 630e32d45fa83d207ffc6342 ###
+### 2022-08-30 15:55:11,899 ### appLog ### INFO ### Card due date: 24/08/2022 ###
+### 2022-08-30 15:55:13,774 ### appLog ### INFO ### Card ID's description to update: 630e32d45fa83d207ffc6342 ###
+### 2022-08-30 15:55:13,777 ### appLog ### INFO ### Description: asdf ###
+### 2022-08-30 15:55:17,240 ### appLog ### INFO ### Attempting to move card to Doing list: 630e32d45fa83d207ffc6342 ###
+### 2022-08-30 15:55:19,890 ### appLog ### INFO ### Attempting to move card to Done list: 630e32d45fa83d207ffc6342 ###
+### 2022-08-30 18:55:56,048 ### appLog ### INFO ### Attempting to move card to To Do list: 630e2ec003a667813666c5ae ###
+### 2022-08-30 18:55:57,076 ### appLog ### INFO ### Attempting to move card to Doing list: 630e2ec003a667813666c5ae ###
+### 2022-08-30 18:55:58,908 ### appLog ### INFO ### Attempting to move card to Done list: 630e2ec003a667813666c5ae ###
+### 2022-08-30 18:56:01,464 ### appLog ### INFO ### Card ID's description to update: 630e2ec003a667813666c5ae ###
+### 2022-08-30 18:56:01,464 ### appLog ### INFO ### Description: Noneasdfads ###
+### 2022-08-30 18:56:03,829 ### appLog ### INFO ### Card ID's : 630e2ec003a667813666c5ae ###
+### 2022-08-30 18:56:03,829 ### appLog ### INFO ### Card due date: 03/08/2022 ###
+### 2022-08-30 18:56:06,392 ### appLog ### INFO ### Card ID's : 630e2ec003a667813666c5ae ###
+### 2022-08-30 18:56:06,392 ### appLog ### INFO ### Card due date: 11/08/2022 ###
+### 2022-08-30 18:56:10,372 ### appLog ### INFO ### Card ID's description to update: 630e2ec003a667813666c5ae ###
+### 2022-08-30 18:56:10,373 ### appLog ### INFO ### Description: adsfasd ###
+### 2022-08-30 18:56:12,057 ### appLog ### INFO ### Attempting to move card to To Do list: 630e2ec003a667813666c5ae ###
+### 2022-08-30 18:56:57,734 ### appLog ### INFO ### Title to add: asdfads ###
+### 2022-08-30 18:57:00,516 ### appLog ### INFO ### Card ID's description to update: 630e3349eaf2b6aa8b6321e0 ###
+### 2022-08-30 18:57:00,516 ### appLog ### INFO ### Description: asdfas ###
+### 2022-08-30 18:57:03,207 ### appLog ### INFO ### Card ID's : 630e3349eaf2b6aa8b6321e0 ###
+### 2022-08-30 18:57:03,207 ### appLog ### INFO ### Card due date: 29/08/2022 ###
+### 2022-08-30 15:57:46,496 ### appLog ### INFO ### Card ID's description to update: 630e32d45fa83d207ffc6342 ###
+### 2022-08-30 15:57:46,506 ### appLog ### INFO ### Description: adas ###
+### 2022-08-30 15:57:50,474 ### appLog ### INFO ### Card ID's description to update: 630e32d45fa83d207ffc6342 ###
+### 2022-08-30 15:57:50,478 ### appLog ### INFO ### Description: xcvxcz ###
+### 2022-08-30 15:57:52,779 ### appLog ### INFO ### Attempting to move card to To Do list: 630e32d45fa83d207ffc6342 ###
+### 2022-08-30 15:57:53,544 ### appLog ### INFO ### Attempting to move card to Doing list: 630e32d45fa83d207ffc6342 ###
+### 2022-08-30 15:57:54,226 ### appLog ### INFO ### Attempting to move card to Done list: 630e32d45fa83d207ffc6342 ###
+### 2022-08-30 15:57:59,693 ### appLog ### INFO ### Card ID's : 630e32d45fa83d207ffc6342 ###
+### 2022-08-30 15:57:59,698 ### appLog ### INFO ### Card due date: 09/08/2022 ###
+### 2022-08-30 16:00:19,794 ### appLog ### INFO ### Card ID's description to update: 630e32d45fa83d207ffc6342 ###
+### 2022-08-30 16:00:19,796 ### appLog ### INFO ### Description: dsaf ###
+### 2022-08-30 16:00:22,254 ### appLog ### INFO ### Card ID's : 630e32d45fa83d207ffc6342 ###
+### 2022-08-30 16:00:22,258 ### appLog ### INFO ### Card due date: 10/08/2022 ###
+### 2022-08-30 16:00:24,813 ### appLog ### INFO ### Title to add: xcvfs ###
+### 2022-08-30 16:01:06,436 ### appLog ### INFO ### Title to add: ewerw ###
+### 2022-08-30 16:01:10,896 ### appLog ### INFO ### Card ID's description to update: 630e34429f2f5f3558bc47b1 ###
+### 2022-08-30 16:01:10,898 ### appLog ### INFO ### Description: dsfasds ###
+### 2022-08-30 19:01:32,506 ### appLog ### INFO ### Title to add: fgdsfg ###
+### 2022-08-30 19:01:35,720 ### appLog ### INFO ### Card ID's description to update: 630e345ca4b66dceea49646c ###
+### 2022-08-30 19:01:35,720 ### appLog ### INFO ### Description: None;jkl;k ###
+### 2022-08-30 19:01:38,292 ### appLog ### INFO ### Card ID's : 630e345ca4b66dceea49646c ###
+### 2022-08-30 19:01:38,293 ### appLog ### INFO ### Card due date: 23/08/2022 ###

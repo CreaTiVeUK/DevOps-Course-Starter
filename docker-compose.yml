@@ -1,5 +1,6 @@
 version: "3.9"
 services:
+
   test:
     env_file: ./.env_test
     build: 
@@ -8,8 +9,20 @@ services:
     image: todo-app:test
     volumes:
       - ./todo_app:/appcode/todo_app
+  
+  mongo:
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+
   dev:
-    env_file: ./.env
+    environment:
+      FLASK_APP: todo_app/app
+      FLASK_ENV: development
+      MONGO_CON_STRING: mongodb://root:example@mongo:27017/
+      MONGO_DB_NAME: dev_items
     build: 
       context: .
       target: development
@@ -18,6 +31,7 @@ services:
       - "5000:5000"
     volumes:
       - ./todo_app:/appcode/todo_app
+  
   prod:
     env_file: ./.env
     build: 

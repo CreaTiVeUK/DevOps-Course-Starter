@@ -1,4 +1,5 @@
 import datetime
+from bson import ObjectId
 from flask import current_app
 import pymongo
 from todo_app.data.item import Item
@@ -56,7 +57,7 @@ class MongoDBClient:
             field: field to update.
             value: value to set for the field.
         """
-        finditem = { "_id": item_id }
+        finditem = { "_id": ObjectId(item_id) }
         newstatus = { "$set": { 
             field: value,
             "dateLastActivity": datetime.datetime.utcnow()
