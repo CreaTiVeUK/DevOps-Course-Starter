@@ -33,7 +33,7 @@ $ cp .env.template .env  # (first time only)
 
 The `.env` file is used by flask to set environment variables when running `flask run`. This enables things like development mode (which also enables features like hot reloading when you make a file change). There's also a [SECRET_KEY](https://flask.palletsprojects.com/en/1.1.x/config/#SECRET_KEY) variable which is used to encrypt the flask session cookie.
 
-You'll need to sign up to trello and insert your Key & Token in the .env file.
+You'll need to sign up to Azure and insert your Connection string & DB name in the .env file.
 
 ## Running the App
 
@@ -58,9 +58,9 @@ Now visit [`http://localhost:5000/`](http://localhost:5000/) in your web browser
 
 1. Move into the ansible directory
 2. Edit inventory.txt by adding the Managed Node IP Address to deploy the app to.
-3. Create an ansible encrypted file to store your trello secrets by running
+3. Create an ansible encrypted file to store your Mongo DB secrets by running
 ```bash
-$ ansible-vault create --vault-id my_pass@prompt trello_secrets.yml
+$ ansible-vault create --vault-id my_pass@prompt mongo_secrets.yml
 ```
 
 You should see output similar to the following:
@@ -71,11 +71,9 @@ Confirm new vault password (my_pass):
 ```
 Safely store your password and do not commit it!
 
-4. Add and save your trello secrets, by adding the following variables in and replacing the dots with your values:
-trello_api_key=...
-trello_token=...
-trello_url=...
-trello_board_id=...
+4. Add and save your Mongo DB secrets, by adding the following variables in and replacing the dots with your values:
+mongo_con_string=...
+mongo_db_name=...
 
 5. Edit the inventory file by adding your managed node IPs, where you will deploy the app to i.e.:
 
