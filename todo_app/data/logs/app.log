@@ -1,0 +1,61 @@
+### 2022-08-28 19:03:29,645 ### appLog ### INFO ### Title to add: testing_mongo_createCard ###
+### 2022-08-28 19:03:37,715 ### appLog ### INFO ### Title to add: another one ###
+### 2022-08-28 19:14:33,673 ### appLog ### INFO ### Attempting to move card to Done list: 630b91d1fb38ebb50b60c182 ###
+### 2022-08-28 19:21:42,138 ### appLog ### INFO ### Attempting to move card to Done list: 630b91d1fb38ebb50b60c182 ###
+### 2022-08-28 19:21:46,469 ### appLog ### INFO ### Attempting to move card to Doing list: 630b91d1fb38ebb50b60c182 ###
+### 2022-08-28 19:30:13,749 ### appLog ### INFO ### Attempting to move card to Done list: 630b91d9fb38ebb50b60c183 ###
+### 2022-08-28 19:30:17,096 ### appLog ### INFO ### Attempting to move card to Doing list: 630b91d9fb38ebb50b60c183 ###
+### 2022-08-28 19:33:00,840 ### appLog ### INFO ### Card ID's : 62fbb6ae8b2ab2dc48e83627 ###
+### 2022-08-28 19:33:00,840 ### appLog ### INFO ### Card due date: 08/17/2022 ###
+### 2022-08-28 19:33:11,323 ### appLog ### INFO ### Card ID's : 62fbb6ae8b2ab2dc48e83627 ###
+### 2022-08-28 19:33:11,324 ### appLog ### INFO ### Card due date: 08/19/2022 ###
+### 2022-08-28 19:34:07,639 ### appLog ### INFO ### Card ID's : 62fbb6ae8b2ab2dc48e83627 ###
+### 2022-08-28 19:34:07,640 ### appLog ### INFO ### Card due date: 08/24/2022 ###
+### 2022-08-28 19:34:13,202 ### appLog ### INFO ### Card ID's : 630b91d1fb38ebb50b60c182 ###
+### 2022-08-28 19:34:13,202 ### appLog ### INFO ### Card due date: 08/21/2022 ###
+### 2022-08-28 19:34:18,270 ### appLog ### INFO ### Card ID's : 630b91d1fb38ebb50b60c182 ###
+### 2022-08-28 19:34:18,270 ### appLog ### INFO ### Card due date: 08/25/2022 ###
+### 2022-08-28 19:34:24,022 ### appLog ### INFO ### Card ID's : 630b91d1fb38ebb50b60c182 ###
+### 2022-08-28 19:34:24,022 ### appLog ### INFO ### Card due date: 09/01/2022 ###
+### 2022-08-28 19:34:32,443 ### appLog ### INFO ### Card ID's : 630b91d1fb38ebb50b60c182 ###
+### 2022-08-28 19:34:32,443 ### appLog ### INFO ### Card due date: 09/13/2022 ###
+### 2022-08-28 19:34:52,026 ### appLog ### INFO ### Card ID's : 62fbb6ae8b2ab2dc48e83627 ###
+### 2022-08-28 19:34:52,026 ### appLog ### INFO ### Card due date: 10/08/2022 ###
+### 2022-08-28 19:34:55,777 ### appLog ### INFO ### Card ID's : 630b91d1fb38ebb50b60c182 ###
+### 2022-08-28 19:34:55,777 ### appLog ### INFO ### Card due date: 12/08/2022 ###
+### 2022-08-28 19:35:04,101 ### appLog ### INFO ### Card ID's description to update: 62fbb6ae8b2ab2dc48e83627 ###
+### 2022-08-28 19:35:04,101 ### appLog ### INFO ### Description: testing description ###
+### 2022-08-28 19:35:13,817 ### appLog ### INFO ### Card ID's description to update: 62fbb6ae8b2ab2dc48e83627 ###
+### 2022-08-28 19:35:13,818 ### appLog ### INFO ### Description: testing description ###
+### 2022-08-28 19:36:19,523 ### appLog ### INFO ### Card ID's description to update: 62fbb6ae8b2ab2dc48e83627 ###
+### 2022-08-28 19:36:19,524 ### appLog ### INFO ### Description: testing 123 ###
+### 2022-08-28 19:36:30,606 ### appLog ### INFO ### Card ID's description to update: 630b91d1fb38ebb50b60c182 ###
+### 2022-08-28 19:36:30,607 ### appLog ### INFO ### Description: testing again ###
+### 2022-08-28 19:38:27,935 ### appLog ### INFO ### Card ID's description to update: 630b91d1fb38ebb50b60c182 ###
+### 2022-08-28 19:38:27,935 ### appLog ### INFO ### Description: testing again 123 ###
+### 2022-08-28 19:43:30,702 ### appLog ### INFO ### Attempting to move card to Doing list: 62fbb6ae8b2ab2dc48e83627 ###
+### 2022-08-28 19:43:36,552 ### appLog ### INFO ### Attempting to move card to Done list: 62fbb6ae8b2ab2dc48e83627 ###
+### 2022-08-28 19:43:43,306 ### appLog ### INFO ### Card ID's description to update: 62fbb6ae8b2ab2dc48e83627 ###
+### 2022-08-28 19:43:43,306 ### appLog ### INFO ### Description: testing 12344444 ###
+### 2022-08-28 19:43:45,653 ### appLog ### INFO ### Attempting to move card to To Do list: 62fbb6ae8b2ab2dc48e83627 ###
+### 2022-08-28 19:43:55,267 ### appLog ### INFO ### Card ID's : 630b91d9fb38ebb50b60c183 ###
+### 2022-08-28 19:43:55,267 ### appLog ### INFO ### Card due date: 02/08/2022 ###
+### 2022-08-29 12:17:55,776 ### appLog ### INFO ### Attempting to move card to Doing list: 62fbb6ae8b2ab2dc48e83627 ###
+### 2022-08-29 12:17:57,832 ### appLog ### INFO ### Attempting to move card to To Do list: 630b91d1fb38ebb50b60c182 ###
+### 2022-08-29 12:17:58,944 ### appLog ### INFO ### Attempting to move card to Done list: 630b91d1fb38ebb50b60c182 ###
+### 2022-08-29 12:18:00,810 ### appLog ### INFO ### Attempting to move card to To Do list: 62fbb6ae8b2ab2dc48e83627 ###
+### 2022-08-29 12:18:02,993 ### appLog ### INFO ### Attempting to move card to Doing list: 630b91d1fb38ebb50b60c182 ###
+### 2022-08-29 12:18:09,931 ### appLog ### INFO ### Card ID's description to update: 630b91d9fb38ebb50b60c183 ###
+### 2022-08-29 12:18:09,931 ### appLog ### INFO ### Description: testing description ###
+### 2022-08-29 12:27:09,433 ### appLog ### INFO ### Attempting to move card to Doing list: 62fbb6ae8b2ab2dc48e83627 ###
+### 2022-08-29 12:27:10,874 ### appLog ### INFO ### Attempting to move card to To Do list: 630b91d1fb38ebb50b60c182 ###
+### 2022-08-29 12:27:12,356 ### appLog ### INFO ### Attempting to move card to To Do list: 62fbb6898b2ab2dc48e83626 ###
+### 2022-08-29 12:27:14,156 ### appLog ### INFO ### Attempting to move card to Done list: 62fbb6ae8b2ab2dc48e83627 ###
+### 2022-08-29 12:27:15,220 ### appLog ### INFO ### Attempting to move card to Done list: 630b91d9fb38ebb50b60c183 ###
+### 2022-08-29 12:27:16,509 ### appLog ### INFO ### Attempting to move card to Doing list: 630b91d9fb38ebb50b60c183 ###
+### 2022-08-29 12:27:46,782 ### appLog ### INFO ### Attempting to move card to Doing list: 62fbb6898b2ab2dc48e83626 ###
+### 2022-08-29 12:27:47,971 ### appLog ### INFO ### Attempting to move card to Done list: 62fbb6898b2ab2dc48e83626 ###
+### 2022-08-29 12:27:48,985 ### appLog ### INFO ### Attempting to move card to To Do list: 62fbb6ae8b2ab2dc48e83627 ###
+### 2022-08-29 12:27:50,217 ### appLog ### INFO ### Attempting to move card to Doing list: 62fbb6898b2ab2dc48e83626 ###
+### 2022-08-29 12:27:51,494 ### appLog ### INFO ### Attempting to move card to To Do list: 62fbb6898b2ab2dc48e83626 ###
+### 2022-08-29 12:27:52,270 ### appLog ### INFO ### Attempting to move card to To Do list: 62fbb6898b2ab2dc48e83626 ###

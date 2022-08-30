@@ -29,7 +29,7 @@ jobs:
     name: Push image to Docker Hub
     needs: build
     runs-on: ubuntu-latest
-    if: ${{ (github.event_name == 'push') && (github.ref == 'refs/heads/main') }}
+    if: ${{ (github.event_name == 'push') && (github.ref == 'refs/heads/module-9') }}
     steps:
       - uses: actions/checkout@v3
       - uses: satackey/action-docker-layer-caching@v0.0.11

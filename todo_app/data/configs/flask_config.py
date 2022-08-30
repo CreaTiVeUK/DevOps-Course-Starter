@@ -3,16 +3,12 @@ import os
 class Config:
     def __init__(self):
         """Base configuration variables."""
-        self.TRELLO_API_KEY = os.environ.get('TRELLO_API_KEY')
-        self.TRELLO_API_TOKEN = os.environ.get('TRELLO_API_TOKEN')
-        self.TRELLO_URL = os.environ.get('TRELLO_URL')
-        self.TRELLO_BOARD_ID = os.environ.get('TRELLO_BOARD_ID')
+        self.MONGO_CON_STRING= os.environ.get('MONGO_CON_STRING')
+        self.MONGO_DB_NAME = os.environ.get('MONGO_DB_NAME')
         
         ENV_VARIABLES = {
-            self.TRELLO_API_KEY,
-            self.TRELLO_API_TOKEN,
-            self.TRELLO_URL,
-            self.TRELLO_BOARD_ID
+            self.MONGO_CON_STRING,
+            self.MONGO_DB_NAME
             }
         
         for i in ENV_VARIABLES:

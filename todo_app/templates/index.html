@@ -19,7 +19,7 @@
         {% for list in [view_model.todo_items, view_model.doing_items, view_model.done_items] %}
         <ul class="list-group">
             {% if list %}
-                <h4 style="text-decoration: underline;" class="display-4">{{list.0.list_name}}</h4>
+                <h4 style="text-decoration: underline;" class="display-4">{{list.0.status}}</h4>
             {% endif %}
             {% for item in list %}
                 <li class="list-group-item">

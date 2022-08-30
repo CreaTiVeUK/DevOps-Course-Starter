@@ -22,6 +22,7 @@ The project uses a virtual environment to isolate package dependencies. To creat
 
 ```bash
 $ poetry install
+
 ```
 
 You'll also need to clone a new `.env` file from the `.env.template` to store local configuration options. This is a one-time operation on first setup:
@@ -166,13 +167,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-
-
-
-Notes:
-primary conn string
-mongodb://creativeuk:W8mDyrqkFRWLBTsALqMSI73H3lTLYPfB2B2hmUCp5P3jGI2xi2DDeVsPeiCRzoHlWMpXgxg4YEESijYTLkv5hw==@creativeuk.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@creativeuk@
-
-
-client = pymongo.MongoClient("mongodb://creativeuk:W8mDyrqkFRWLBTsALqMSI73H3lTLYPfB2B2hmUCp5P3jGI2xi2DDeVsPeiCRzoHlWMpXgxg4YEESijYTLkv5hw==@creativeuk.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@creativeuk@")
