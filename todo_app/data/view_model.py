@@ -6,10 +6,10 @@ class ViewModel:
     def items(self):
         return self._items
 
-    def get_items_with_list(self, list_name):
+    def get_items_with_list(self, status):
         items = []
         for item in self._items:
-            if item.list_name == list_name:
+            if item.status == status:
                 items.append(item)
         return items
 

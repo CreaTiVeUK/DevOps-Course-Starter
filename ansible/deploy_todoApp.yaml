@@ -3,7 +3,7 @@
   hosts: webserver
   remote_user: ec2-user
   vars_files:
-    - ./trello_secrets.yml
+    - ./mongo_secrets.yml
 
   tasks: 
     - name: Install Git
