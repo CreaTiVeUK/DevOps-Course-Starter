@@ -3,8 +3,10 @@ import requests
 from todo_app.data.configs.flask_config import Config
 from todo_app.data.view_model import ViewModel
 from todo_app.data.mongo_db_client import MongoDBClient
-from flask_login import LoginManager, login_required
+from todo_app.data.User import User
+from flask_login import LoginManager, login_required, login_user, current_user
 import todo_app.data.configs.logger_settings as logger
+from functools import wraps
 
 def create_app():
     config = Config()
@@ -20,7 +22,7 @@ def create_app():
 
     @login_manager.user_loader
     def load_user(user_id):
-        pass # We will return to this later
+        return User(user_id)
 
     login_manager.init_app(app)
     
@@ -44,8 +46,20 @@ def create_app():
         }
         auth_url = 'https://api.github.com/user'
         auth_response = requests.get(auth_url, headers = auth_headers)
+        username = auth_response.json()['login']
+        user = User(username)
+        login_user(user)
 
-        return auth_response.json()
+        return redirect(url_for('index'))
+
+    def requires_writer(f):
+        @wraps(f)
+        def wrapped(*args, **kwargs):
+            if current_user.role == 'writer':
+                return f(*args, **kwargs)
+            else:
+                return redirect(url_for('index'))    
+        return wrapped
 
     @app.route('/')
     @login_required
@@ -57,6 +71,7 @@ def create_app():
 
     @app.route('/add_item', methods=['POST'])
     @login_required
+    @requires_writer
     def add_item():
         title = request.form['filmTitle']
         logger.log.info('Title to add: ' + title)
@@ -66,6 +81,7 @@ def create_app():
 
     @app.route('/item_description/<string:titleID>', methods=['GET', 'POST'])
     @login_required
+    @requires_writer
     def item_description(titleID):
         description = request.form['description']
         logger.log.info('Card ID\'s description to update: ' + titleID)
@@ -76,6 +92,7 @@ def create_app():
 
     @app.route('/item_due/<string:titleID>', methods=['GET', 'POST'])
     @login_required
+    @requires_writer
     def item_due(titleID):
         due = request.form['date']
         logger.log.info('Card ID\'s : ' + titleID)
@@ -86,6 +103,7 @@ def create_app():
 
     @app.route('/complete_item/<string:titleID>', methods=['POST'])
     @login_required
+    @requires_writer
     def complete_item(titleID):
         logger.log.info('Attempting to move card to Done list: '+ titleID)
         mongo_db.update_document(titleID, 'status', 'Done')
@@ -94,6 +112,7 @@ def create_app():
 
     @app.route('/doing_item/<string:titleID>', methods=['POST'])
     @login_required
+    @requires_writer
     def doing_item(titleID):
         logger.log.info('Attempting to move card to Doing list: '+ titleID)
         mongo_db.update_document(titleID, 'status', 'Doing')
@@ -102,6 +121,7 @@ def create_app():
 
     @app.route('/revert_item/<string:titleID>', methods=['POST'])
     @login_required
+    @requires_writer
     def revert_item(titleID):
         logger.log.info('Attempting to move card to To Do list: '+ titleID)
         mongo_db.update_document(titleID, 'status', 'To Do')
