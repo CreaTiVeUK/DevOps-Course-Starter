@@ -7,4 +7,3 @@ class Item:
         self.due = due
         self.modification_time = modification_time
         self.status = status
-
