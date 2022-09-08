@@ -21,7 +21,6 @@ jobs:
       continue-on-error: true
     - name: Build the CI test image
       run: docker build --target ci-test --tag todo-app:ci-test .
-
     - name: Run the CI test image
       run: docker run --env-file ./.env_test todo-app:ci-test
       
@@ -29,7 +28,7 @@ jobs:
     name: Push image to Docker Hub
     needs: build
     runs-on: ubuntu-latest
-    if: ${{ (github.event_name == 'push') && (github.ref == 'refs/heads/module-10') }}
+    if: ${{ (github.event_name == 'push') && (github.ref == 'refs/heads/module-11') }}
     steps:
       - uses: actions/checkout@v3
       - uses: satackey/action-docker-layer-caching@v0.0.11
@@ -38,10 +37,8 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-      
       - name: Build the CI prod image 
         run: docker build --target production --tag simeonp901/todo_app:latest --tag simeonp901/todo_app:"$GITHUB_SHA" .
-
       - name: Push the CI prod image to Docker Hub
         run: docker push simeonp901/todo_app --all-tags
 
@@ -53,9 +50,5 @@ jobs:
       - uses: actions/checkout@v2
       - uses: satackey/action-docker-layer-caching@v0.0.11
         continue-on-error: true
-      - uses: akhileshns/heroku-deploy@v3.12.12
-        with:
-          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "todo-app-simeon"
-          heroku_email: "simeon_penev@hotmail.com"
-          usedocker: true     
+      - name: Restart and pull latest version of the image on Azure
+        run: curl -dH -X POST ${{ AZURE_WEBHOOKURL }}
