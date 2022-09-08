@@ -121,3 +121,6 @@ env/
 
 ### Logs ###
 *.log
+
+### Terraform ###
+.terraform*
