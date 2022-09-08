@@ -51,4 +51,4 @@ jobs:
       - uses: satackey/action-docker-layer-caching@v0.0.11
         continue-on-error: true
       - name: Restart and pull latest version of the image on Azure
-        run: curl -dH -X POST ${{ AZURE_WEBHOOKURL }}
+        run: curl -dH -X POST ${{ secrets.AZURE_WEBHOOKURL }}
