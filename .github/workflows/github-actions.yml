@@ -43,11 +43,12 @@ jobs:
         run: docker push simeonp901/todo_app --all-tags
 
   deploy:
-    name: Restart and pull latest version of the image on Azure    
+    name: Deploy to Azure  
     needs: publish
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: satackey/action-docker-layer-caching@v0.0.11
         continue-on-error: true
-      - run: curl -dH -X POST ${{ secrets.AZURE_WEBHOOKURL }}
+      - name: Restart and Pull latest image
+        run: curl -dH -X POST ${{ secrets.AZURE_WEBHOOKURL }}
