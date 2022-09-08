@@ -14,6 +14,7 @@ def create_app():
     app.config.from_object(config)
     mongo_db = MongoDBClient()
     login_manager = LoginManager()
+    login_manager.init_app(app)
 
     @login_manager.unauthorized_handler
     def unauthenticated():
@@ -22,8 +23,6 @@ def create_app():
     @login_manager.user_loader
     def load_user(user_id):
         return User(user_id)
-
-    login_manager.init_app(app)
     
     @app.route('/login/callback')
     def callback():
