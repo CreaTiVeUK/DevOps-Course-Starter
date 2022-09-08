@@ -34,7 +34,7 @@ $ cp .env.template .env  # (first time only)
 The `.env` file is used by flask to set environment variables when running `flask run`. This enables things like development mode (which also enables features like hot reloading when you make a file change). There's also a [SECRET_KEY](https://flask.palletsprojects.com/en/1.1.x/config/#SECRET_KEY) variable which is used to encrypt the flask session cookie.
 
 Sign up to Azure and insert your Connection string & DB name in the .env file.
-Create 2 oAuth apps in git (dev and prod) and insert your dev client id/secrets in the .env file and prod details in heroku i.e.:
+Create 2 oAuth apps in git (dev and prod) and insert your dev client id/secrets in the .env file and prod details in Azure i.e.:
     - Application name: to-do app
     - Homepage URL: http://localhost:5000
     - Authorization callback URL: http://localhost:5000/login/callback
